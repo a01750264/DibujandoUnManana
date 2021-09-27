@@ -9,10 +9,12 @@
         <entry key="app/src/main/res/drawable/ic_menu_gallery.xml" value="0.30666666666666664" />
         <entry key="app/src/main/res/drawable/side_nav_bar.xml" value="0.31145833333333334" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2907692307692308" />
-        <entry key="app/src/main/res/layout/app_bar_main.xml" value="0.2824074074074074" />
-        <entry key="app/src/main/res/layout/content_main.xml" value="0.2824074074074074" />
+        <entry key="app/src/main/res/layout/app_bar_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/content_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragement_quienes_somos.xml" value="0.2824074074074074" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.2824074074074074" />
+        <entry key="app/src/main/res/layout/fragment_que_hacemos.xml" value="0.2824074074074074" />
+        <entry key="app/src/main/res/layout/fragment_quienes_somos.xml" value="0.2824074074074074" />
         <entry key="app/src/main/res/layout/fragment_slideshow.xml" value="0.2824074074074074" />
         <entry key="app/src/main/res/layout/nav_header_main.xml" value="0.2907692307692308" />
         <entry key="app/src/main/res/menu/activity_main_drawer.xml" value="0.2907692307692308" />
