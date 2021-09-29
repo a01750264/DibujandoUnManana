@@ -17,5 +17,11 @@
         <item
             android:id="@+id/nav_campanias"
             android:title="Ver Campañas" />
+        <item
+            android:id="@+id/nav_comosumarte"
+            android:title="¿Cómo Sumarte?" />
+        <item
+            android:id="@+id/nav_contactanos"
+            android:title="@string/menu_contactanos" />
     </group>
 </menu>

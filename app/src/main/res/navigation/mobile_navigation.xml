@@ -26,4 +26,14 @@
         android:name="mx.brg.dibujandounmanana.ui.campanias.Campanias"
         android:label="@string/menu_campanias"
         tools:layout="@layout/fragment_campanias" />
+    <fragment
+        android:id="@+id/nav_comosumarte"
+        android:name="mx.brg.dibujandounmanana.ui.comosumarte.ComoSumarte"
+        android:label="@string/menu_comosumarte"
+        tools:layout="@layout/fragment_como_sumarte" />
+    <fragment
+        android:id="@+id/nav_contactanos"
+        android:name="mx.brg.dibujandounmanana.ui.contactanos.Contactanos"
+        android:label="fragment_contactanos"
+        tools:layout="@layout/fragment_contactanos" />
 </navigation>
