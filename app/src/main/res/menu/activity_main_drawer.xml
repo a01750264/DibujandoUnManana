@@ -10,18 +10,21 @@
             android:title="@string/menu_home" />
         <item
             android:id="@+id/nav_quienessomos"
-            android:title="¿Quiénes Somos?" />
+            android:icon="@drawable/ic_baseline_group_24"
+            android:title="@string/menu_quienessomos" />
         <item
             android:id="@+id/nav_quehacemos"
-            android:title="¿Qué Hacemos?" />
+            android:icon="@android:drawable/ic_dialog_info"
+            android:title="@string/menu_quehacemos" />
         <item
             android:id="@+id/nav_campanias"
-            android:title="Ver Campañas" />
+            android:title="@string/menu_campanias" />
         <item
             android:id="@+id/nav_comosumarte"
-            android:title="¿Cómo Sumarte?" />
+            android:title="@string/menu_comosumarte" />
         <item
             android:id="@+id/nav_contactanos"
+            android:icon="@drawable/ic_baseline_message_24"
             android:title="@string/menu_contactanos" />
     </group>
 </menu>
