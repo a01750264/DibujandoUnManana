@@ -18,9 +18,11 @@
             android:title="@string/menu_quehacemos" />
         <item
             android:id="@+id/nav_campanias"
+            android:icon="@drawable/donar"
             android:title="@string/menu_campanias" />
         <item
             android:id="@+id/nav_comosumarte"
+            android:icon="@drawable/corazon"
             android:title="@string/menu_comosumarte" />
         <item
             android:id="@+id/nav_contactanos"
