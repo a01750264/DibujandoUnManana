@@ -34,6 +34,6 @@
     <fragment
         android:id="@+id/nav_contactanos"
         android:name="mx.brg.dibujandounmanana.ui.contactanos.Contactanos"
-        android:label="fragment_contactanos"
+        android:label="@string/menu_contactanos"
         tools:layout="@layout/fragment_contactanos" />
 </navigation>

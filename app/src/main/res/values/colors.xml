@@ -9,4 +9,5 @@
     <color name="tituloBarraSuperior">#FFFFFFFF</color>
     <color name="white">#FFFFFFFF</color>
     <color name="secundario">#F0AE44</color>
+    <color name="subtitulo">#424242</color>
 </resources>
