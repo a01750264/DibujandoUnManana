@@ -36,7 +36,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnMailMx"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -55,7 +55,7 @@
             android:layout_weight="1" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnTelMx"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -96,7 +96,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5">
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/btnMailMty"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/secundario"
@@ -114,7 +114,7 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/btnTelMty"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/secundario"
