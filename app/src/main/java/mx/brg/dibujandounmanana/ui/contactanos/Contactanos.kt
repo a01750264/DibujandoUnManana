@@ -57,6 +57,31 @@ class Contactanos : Fragment() {
             dialIntent.data = Uri.parse("tel:" + "+528144448643")
             startActivity(dialIntent)
         }
+        binding.btnFacebook.setOnClickListener {
+            val urlIntent = Intent(Intent.ACTION_VIEW)
+            urlIntent.data = Uri.parse("https://www.facebook.com/DibujandoUnManana/")
+            startActivity(urlIntent)
+        }
+        binding.btnTwitter.setOnClickListener {
+            val urlIntent = Intent(Intent.ACTION_VIEW)
+            urlIntent.data = Uri.parse("https://twitter.com/FDibujando")
+            startActivity(urlIntent)
+        }
+        binding.btnInstagram.setOnClickListener {
+            val urlIntent = Intent(Intent.ACTION_VIEW)
+            urlIntent.data = Uri.parse("https://www.instagram.com/fdibujando/")
+            startActivity(urlIntent)
+        }
+        binding.btnLinkedin.setOnClickListener {
+            val urlIntent = Intent(Intent.ACTION_VIEW)
+            urlIntent.data = Uri.parse("https://www.linkedin.com/company/fundaci%C3%B3n-dibujando-un-manana")
+            startActivity(urlIntent)
+        }
+        binding.btnYoutube.setOnClickListener {
+            val urlIntent = Intent(Intent.ACTION_VIEW)
+            urlIntent.data = Uri.parse("https://www.youtube.com/user/FDibujando/")
+            startActivity(urlIntent)
+        }
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {

@@ -32,7 +32,7 @@
         android:layout_marginEnd="8dp"
         android:fontFamily="@font/nunito"
         android:text="@string/quehacemos_modelo_fdum"
-        android:textAlignment="center"
+        android:textAlignment="textStart"
         android:textColor="@color/subtitulo"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
