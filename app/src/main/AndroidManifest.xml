@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DibujandoUnManana">
         <activity
+            android:name=".ui.donar.Donar"
+            android:exported="true"
+            android:label="@string/title_activity_donar"
+            android:theme="@style/Theme.DibujandoUnManana.NoActionBar" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
