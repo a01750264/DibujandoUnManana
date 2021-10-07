@@ -27,6 +27,7 @@ class QuienesSomos : Fragment() {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(QuienesSomosViewModel::class.java)
         // TODO: Use the ViewModel
+        // Comentario para prueba
     }
 
 }
