@@ -10,4 +10,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="secundario">#F0AE44</color>
     <color name="subtitulo">#424242</color>
+    <color name="borde_imagen">#E6E6E6</color>
 </resources>
