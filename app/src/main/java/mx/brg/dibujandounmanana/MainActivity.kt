@@ -14,7 +14,7 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.app_bar_main.*
 import mx.brg.dibujandounmanana.databinding.ActivityMainBinding
-import mx.brg.dibujandounmanana.ui.donar.Donar
+import mx.brg.dibujandounmanana.ui.donacion.Donacion
 
 class MainActivity : AppCompatActivity() {
 
@@ -44,9 +44,10 @@ class MainActivity : AppCompatActivity() {
         navView.setupWithNavController(navController)
 
         botonDonar.setOnClickListener {
-            val intent = Intent(this, Donar::class.java)
+            val intent = Intent(this, Donacion::class.java)
             startActivity(intent)
         }
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
