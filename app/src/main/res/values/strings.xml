@@ -17,10 +17,32 @@
     <string name="menu_contactanos">Contáctanos</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="quienes_somos_1">Nos dedicamos a impulsar el desarrollo social de niñas, niños y
+        adolescentes en situación de vulnerabilidad en México y Centro América con un modelo de
+        inversión social que entrelaza la voluntad de ayudar de diversos actores y la transforma
+        en programas sociales basados en los derechos humanos que generan impactos positivos a
+        largo plazo.
+    </string>
+    <string name="quienes_somos_2">En octubre de 1997 nació Fundación Dibujando un Mañana, A.C. con
+        el objetivo de invertir en instituciones que atienden a niñas, niños y adolescentes para
+        impulsar el desarrollo institucional y garantizar la sustentabilidad de las mismas.\nLos
+        más  de 20 años de evolución han estado marcados por diferentes acontecimientos de
+        transformación, fortalecimiento, innovación y transparencia gracias a sus siete presidentes,
+        40 miembros del Consejo Directivo, diferentes asesores en ocho Comités de trabajo y el
+        Equipo Operativo.\nEl camino ha sido largo y aún queda mucho por hacer. Por eso estamos
+        convencidos de que        la ruta es generar alianzas para crear condiciones idóneas que
+        favorezcan la vida digna de todas las personas en nuestro país y la región. \n </string>
 
-    <string name="quehacemos_modelo_fdum">Nuestro Modelo está inspirado en una visión sistémica y de carácter internacional que nos permite dimensionar en un mismo panorama a los diferentes actores sociales que se deben vincular a través de alianzas para lograr el Desarrollo Sostenible y alcanzar nuestro propósito.
-
-Somos una organización consciente del contexto en el cual se gestan las problemáticas sociales de las niñas, niños, adolescentes y jóvenes, así como también de la voluntad de ayudar de empresas, personas y organizaciones. Por eso nos enfocamos en la unión de estas voluntades, basándonos en estándares internacionales como la Cooperación Triangular, Gestión para Resultados de Desarrollo y Enfoque de Derechos Humanos, para fortalecerlas y potenciar su alcance e inversión social.</string>
+    <string name="quehacemos_modelo_fdum">Nuestro Modelo está inspirado en una visión sistémica
+        y de carácter internacional que nos permite dimensionar en un mismo panorama a los
+        diferentes actores sociales que se deben vincular a través de alianzas para lograr el
+        Desarrollo Sostenible y alcanzar nuestro propósito.
+        Somos una organización consciente del contexto en el cual se gestan las problemáticas
+        sociales de las niñas, niños, adolescentes y jóvenes, así como también de la voluntad de
+        ayudar de empresas, personas y organizaciones. Por eso nos enfocamos en la unión de estas
+        voluntades, basándonos en estándares internacionales como la Cooperación Triangular,
+        Gestión para Resultados de Desarrollo y Enfoque de Derechos Humanos, para fortalecerlas y
+        potenciar su alcance e inversión social.</string>
     <string name="title_activity_donar">Donar</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
