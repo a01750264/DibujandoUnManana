@@ -2,18 +2,190 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayoutDon"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.donacion.Donacion">
-
-    <com.paypal.checkout.paymentbutton.PayPalButton
-        android:id="@+id/payPalButton"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="172dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/libre_baskerville_bold"
+                android:text="Cargo a Tarjeta Bancaria"
+                android:textAlignment="center"
+                android:textColor="@color/subtitulo"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/nunito"
+                android:text="@string/descripcion_donativo_tarjeta"
+                android:textAlignment="center"
+                android:textColor="@color/subtitulo" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextNumberDecimal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/edit_text_background"
+                    android:ems="10"
+                    android:fontFamily="@font/nunito"
+                    android:hint="0.00 MXN  "
+                    android:inputType="numberDecimal"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/subtitulo"
+                    android:textSize="16sp" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:entries="@array/referencia_donativo"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16sp" />
+
+            <EditText
+                android:id="@+id/etAcercaDonativo"
+                android:layout_width="match_parent"
+                android:layout_height="128dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/edit_text_background"
+                android:ems="10"
+                android:fontFamily="@font/nunito"
+                android:hint="  Platícanos de tu donativo"
+                android:inputType="textMultiLine"
+                android:textAlignment="textStart"
+                android:textColor="@color/subtitulo"
+                android:textSize="16sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16sp" />
+
+            <com.paypal.checkout.paymentbutton.PayPalButton
+                android:id="@+id/payPalButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16sp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/libre_baskerville_bold"
+                android:text="Depósito en efectivo y transferencia"
+                android:textAlignment="center"
+                android:textColor="@color/subtitulo"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/nunito"
+                android:text="@string/descripcion_donativo_deposito"
+                android:textAlignment="center"
+                android:textColor="@color/subtitulo" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16sp" />
+
+            <TextView
+                android:id="@+id/tvNombreDeposito"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/nunito"
+                android:text="Nombre:  Fundación Dibujando un Mañana, A.C."
+                android:textAlignment="textStart"
+                android:textColor="@color/subtitulo"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tvBancoDeposito"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/nunito"
+                android:text="Banco:  BBVA"
+                android:textAlignment="textStart"
+                android:textColor="@color/subtitulo"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tvCuentaDeposito"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/nunito"
+                android:text="N° de Cuenta:  0450074497"
+                android:textAlignment="textStart"
+                android:textColor="@color/subtitulo"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tvCLABEDeposito"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/nunito"
+                android:text="CLABE:  012180004500744974"
+                android:textAlignment="textStart"
+                android:textColor="@color/subtitulo"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

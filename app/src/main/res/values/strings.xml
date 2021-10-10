@@ -43,7 +43,14 @@
         voluntades, basándonos en estándares internacionales como la Cooperación Triangular,
         Gestión para Resultados de Desarrollo y Enfoque de Derechos Humanos, para fortalecerlas y
         potenciar su alcance e inversión social.</string>
-    <string name="title_activity_donar">Donar</string>
+    
+    <string name="title_activity_donar">Donativos</string>
+    <string name="descripcion_donativo_tarjeta">Haz tu donativo/pago único de forma segura utilizando tu
+tarjeta de crédito o débito.</string>
+    <string name="descripcion_donativo_deposito">Puede hacer las transferencias a través de su aplicación de Banca Electrónica o Aplicación Móvil. Asimismo, los depósitos los puede realizar en ventanillas de cualquier sucursal BBVA o en tiendas de conveniencia.</string>
+    <string-array name="referencia_donativo">
+        <item>Donativo Único</item>
+    </string-array>
     <string name="large_text">
         "Material is the metaphor.\n\n"
 
