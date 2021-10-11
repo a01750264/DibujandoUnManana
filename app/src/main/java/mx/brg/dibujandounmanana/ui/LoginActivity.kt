@@ -3,16 +3,9 @@ package mx.brg.dibujandounmanana.ui
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import androidx.appcompat.app.ActionBar
-import androidx.databinding.DataBindingUtil
-import kotlinx.android.synthetic.main.activity_login.*
 import mx.brg.dibujandounmanana.MainActivity
-import mx.brg.dibujandounmanana.R
+import mx.brg.dibujandounmanana.RegistarActivity
 import mx.brg.dibujandounmanana.databinding.ActivityLoginBinding
-import mx.brg.dibujandounmanana.databinding.FragmentContactanosBinding
 
 class LoginActivity : AppCompatActivity() {
 
@@ -31,10 +24,23 @@ class LoginActivity : AppCompatActivity() {
         supportActionBar?.hide()
 
 
+        binding.btnRegistrarse.setOnClickListener {
+            println("registar")
+            mostrarRegistarActivty()
+        }
+
         binding.btnAcceder.setOnClickListener {
             mostrarMainActivity()
         }
 
+
+
+
+    }
+
+    private fun mostrarRegistarActivty() {
+        val registarActivity = Intent(this, RegistarActivity::class.java)
+        startActivity(registarActivity)
     }
 
     private fun mostrarMainActivity() {

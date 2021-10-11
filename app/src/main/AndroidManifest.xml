@@ -22,15 +22,18 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.donacion.Donacion"
+            android:name=".RegistarActivity"
             android:exported="true"
             android:label="@string/title_activity_donar"/>
+        <activity
+            android:name=".ui.donacion.Donacion"
+            android:exported="true"
+            android:label="@string/title_activity_donar" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.DibujandoUnManana.NoActionBar">
-        </activity>
+            android:theme="@style/Theme.DibujandoUnManana.NoActionBar"></activity>
     </application>
 
 </manifest>
