@@ -13,6 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DibujandoUnManana">
         <activity
+            android:name=".SettingsActivity"
+            android:exported="true"
+            android:label="@string/title_activity_settings"/>
+        <activity
             android:name=".ui.LoginActivity"
             android:exported="true">
             <intent-filter>
@@ -24,7 +28,7 @@
         <activity
             android:name=".RegistarActivity"
             android:exported="true"
-            android:label="@string/title_activity_donar"/>
+            android:label="@string/title_activity_donar" />
         <activity
             android:name=".ui.donacion.Donacion"
             android:exported="true"
@@ -33,7 +37,7 @@
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.DibujandoUnManana.NoActionBar"></activity>
+            android:theme="@style/Theme.DibujandoUnManana.NoActionBar" />
     </application>
 
 </manifest>

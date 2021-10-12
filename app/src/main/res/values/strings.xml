@@ -177,4 +177,11 @@ tarjeta de crédito o débito.</string>
         <item>Yucatán</item>
         <item>Zacatecas</item>
     </string-array>
+
+    <!-- Settings -->
+    <string-array name="idioma_settings">
+        <item>Español</item>
+        <item>English</item>
+    </string-array>
+    <string name="title_activity_settings">Configuración</string>
 </resources>
