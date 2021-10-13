@@ -13,9 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DibujandoUnManana">
         <activity
-            android:name=".SettingsActivity"
+            android:name=".PerfilActivity"
             android:exported="true"
-            android:label="@string/title_activity_settings"/>
+            android:label="@string/title_activity_perfil"/>
         <activity
             android:name=".ui.LoginActivity"
             android:exported="true">

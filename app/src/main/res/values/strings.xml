@@ -183,5 +183,5 @@ tarjeta de crédito o débito.</string>
         <item>Español</item>
         <item>English</item>
     </string-array>
-    <string name="title_activity_settings">Configuración</string>
+    <string name="title_activity_perfil">Perfil</string>
 </resources>
