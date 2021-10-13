@@ -13,17 +13,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DibujandoUnManana">
         <activity
-            android:name=".PerfilActivity"
-            android:exported="true"
-            android:label="@string/title_activity_perfil"/>
-        <activity
-            android:name=".ui.LoginActivity"
+            android:name=".intro.IntroActivity"
             android:exported="true">
+            <!--
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".PerfilActivity"
+            android:exported="true"
+            android:label="@string/title_activity_perfil" />
+        <activity
+            android:name=".ui.LoginActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
         </activity>
         <activity
             android:name=".RegistarActivity"

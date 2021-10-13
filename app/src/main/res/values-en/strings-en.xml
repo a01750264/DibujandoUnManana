@@ -185,4 +185,7 @@ tarjeta de crédito o débito.</string>
         <item>English</item>
     </string-array>
     <string name="title_activity_perfil">Account</string>
+
+    <!-- Intro -->
+    <string name="intro_1">We are Fundación Dibujando un Mañana!</string>
 </resources>
