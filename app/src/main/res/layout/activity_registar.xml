@@ -16,131 +16,181 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/fdum_logo_completo" />
-    <LinearLayout
+
+    <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="16dp"
         android:background="@color/white"
-        android:gravity="center|top"
-        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView7">
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="16sp" />
-        <TextView
-            android:id="@+id/textView11"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/libre_baskerville_bold"
-            android:text="Registrarse"
-            android:textAlignment="center"
-            android:textColor="@color/subtitulo"
-            android:textSize="24sp" />
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="16sp" />
-
-        <EditText
-            android:id="@+id/etEmailRegistrar"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:background="@drawable/edit_text_background"
-            android:ems="10"
-            android:fontFamily="@font/nunito"
-            android:hint="  Correo electrónico"
-            android:inputType="textEmailAddress"
-            android:textColor="@color/subtitulo"
-            android:textSize="16sp" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="16sp" />
-
-        <EditText
-            android:id="@+id/etContrasenaRegistar"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:background="@drawable/edit_text_background"
-            android:ems="10"
-            android:fontFamily="@font/nunito"
-            android:hint="  Contraseña"
-            android:inputType="textPassword"
-            android:textColor="@color/subtitulo"
-            android:textSize="16sp" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="16sp" />
-
-        <EditText
-            android:id="@+id/etNombreRegistrar"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:background="@drawable/edit_text_background"
-            android:ems="10"
-            android:fontFamily="@font/nunito"
-            android:hint="  Nombre Completo"
-            android:textColor="@color/subtitulo"
-            android:textSize="16sp" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="16sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:background="@color/white"
+            android:gravity="center|top"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7">
 
-            <EditText
-                android:id="@+id/etFechaNacimiento"
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                android:background="@drawable/edit_text_background"
-                android:ems="10"
-                android:fontFamily="@font/nunito"
-                android:hint="  Fecha de Nacimiento"
-                android:inputType="date"
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16sp" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/libre_baskerville_bold"
+                android:text="Registrarse"
+                android:textAlignment="center"
                 android:textColor="@color/subtitulo"
-                android:textSize="16sp"/>
+                android:textSize="24sp" />
 
-            <Spinner
-                android:id="@+id/spinner"
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tiEmailRegistrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etEmailRegistrar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito"
+                    android:hint="Correo Electrónico"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/subtitulo"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tiContrasenaRegistrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etContrasenaRegistar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito"
+                    android:hint="Contraseña"
+                    android:inputType="textPassword"
+                    android:textColor="@color/subtitulo"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tiNombreRegistrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etNombreRegistrar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito"
+                    android:hint="Nombre"
+                    android:inputType="textCapWords"
+                    android:textColor="@color/subtitulo"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tiApellidoParternoRegistrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etApellidoPaternoRegistrar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito"
+                    android:hint="Apellido paterno"
+                    android:inputType="textCapWords"
+                    android:textColor="@color/subtitulo"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tiApellidoMaternoRegistrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etApellidoMaternoRegistrar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito"
+                    android:hint="Apellido materno"
+                    android:inputType="textCapWords"
+                    android:textColor="@color/subtitulo"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tiFechaNacimiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etFechaNacimiento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito"
+                    android:hint="Fecha de nacimiento"
+                    android:inputType="date"
+                    android:textColor="@color/subtitulo"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16sp" />
+
+
+            <Button
+                android:id="@+id/btnRegistarCuenta"
                 android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:layout_weight="1"
-                android:entries="@array/estado_registarse"
-                android:spinnerMode="dropdown" />
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/secundario"
+                android:fontFamily="sans-serif"
+                android:text="REGISTRARSE"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                tools:ignore="TextContrastCheck" />
+
 
         </LinearLayout>
+    </ScrollView>
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="16sp" />
-
-        <Button
-            android:id="@+id/btnRegistarCuenta"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/secundario"
-            android:fontFamily="sans-serif"
-            android:text="REGISTRARSE"
-            android:textColor="@color/white"
-            android:textSize="14sp"
-            tools:ignore="TextContrastCheck" />
-
-
-    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

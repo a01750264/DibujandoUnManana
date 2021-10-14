@@ -8,7 +8,9 @@ data class DonanteToken (
     val token: String
     ): Serializable
 
-class DonanteLogIn(
-    donanteData: String,
-    donantePassword: String
-)
+data class DonanteLogIn(
+    @SerializedName("donanteData")
+    val donanteData: String,
+    @SerializedName("donantePassword")
+    val donantePassword: String
+): Serializable

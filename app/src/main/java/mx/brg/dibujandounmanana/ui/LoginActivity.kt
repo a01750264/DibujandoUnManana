@@ -1,8 +1,12 @@
 package mx.brg.dibujandounmanana.ui
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
+import androidx.core.content.edit
 import com.google.gson.Gson
 import mx.brg.dibujandounmanana.MainActivity
 import mx.brg.dibujandounmanana.RegistarActivity
@@ -19,10 +23,12 @@ import retrofit2.converter.gson.GsonConverterFactory
 class LoginActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityLoginBinding
+    private val emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+"
+    private val emailPatternMx = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+\\.+[a-z]+"
 
     private val retrofit by lazy {
         Retrofit.Builder()
-            .baseUrl("http://189.232.85.142:8080/")
+            .baseUrl("http://192.168.1.64:8080/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
@@ -52,7 +58,17 @@ class LoginActivity : AppCompatActivity() {
         binding.btnAcceder.setOnClickListener {
             val user = binding.etEmail.text.toString()
             val pswd = binding.etContrasena.text.toString()
-            iniciarSesion(user, pswd)
+            if (user.matches(emailPattern.toRegex()) == false && user.matches(emailPatternMx.toRegex()) == false ) {
+                Toast.makeText(applicationContext, "Ingresa un correo electrónico válido",
+                    Toast.LENGTH_SHORT).show()
+            } else {
+                if (pswd.length == 0) {
+                    Toast.makeText(applicationContext, "Ingresa un contraseña",
+                        Toast.LENGTH_SHORT).show()
+                } else {
+                    iniciarSesion(user, pswd)
+                }
+            }
         }
 
 
@@ -71,10 +87,19 @@ class LoginActivity : AppCompatActivity() {
             override fun onResponse(call: Call<DonanteToken>, response: Response<DonanteToken>) {
                 if(response.isSuccessful){
                     if(response.code() == 200){
+                        getSharedPreferences("token", Context.MODE_PRIVATE).edit {
+                            putString("token", response.body()?.token)
+                            commit()
+                        }
+                        //val mainActivity = Intent(this@LoginActivity, MainActivity::class.java)
+                        //startActivity(mainActivity)
+                        //this@LoginActivity.finish()
                         println("token ${response.body()?.token}")
                     } else if(response.code() == 401){
+                        Toast.makeText(applicationContext,"Revisa tus datos", Toast.LENGTH_SHORT).show()
                         println(response.body())
                     } else if (response.code() == 500){
+                        Toast.makeText(applicationContext, "Servidor caído", Toast.LENGTH_SHORT).show()
                         println(response.body())
                     }
                 }
