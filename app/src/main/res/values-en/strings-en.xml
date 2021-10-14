@@ -188,4 +188,14 @@ tarjeta de crédito o débito.</string>
 
     <!-- Intro -->
     <string name="intro_1">We are Fundación Dibujando un Mañana!</string>
+    <string name="intro_2_titulo">You have the power to transform tomorrow.</string>
+    <string name="intro_2_texto">We are dedicated to promoting the social development of girls, boys
+        and adolescents in vulnerable situations in Mexico and Central America with a social
+        investment model that intertwines the willingness to help of various actors and transforms
+        it into social programs based on human rights that generate long-term positive impacts.</string>
+    <string name="intro_3_titulo">Our achievements in 23 years</string>
+    <string name="intro_3_text1">Inverted</string>
+    <string name="intro_3_text2">Organizations benefited from more than one project.</string>
+    <string name="intro_3_text3">Girls, boys and teenagers served by the projects.</string>
+    <string name="intro_3_button">Let\'s get started</string>
 </resources>

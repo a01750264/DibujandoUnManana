@@ -47,6 +47,8 @@
         <entry key="app/src/main/res/layout/fragment_contactanos.xml" value="0.375" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.2824074074074074" />
         <entry key="app/src/main/res/layout/fragment_intro_page1.xml" value="0.38958333333333334" />
+        <entry key="app/src/main/res/layout/fragment_intro_page2.xml" value="0.4036458333333333" />
+        <entry key="app/src/main/res/layout/fragment_intro_page3.xml" value="0.4036458333333333" />
         <entry key="app/src/main/res/layout/fragment_que_hacemos.xml" value="0.335" />
         <entry key="app/src/main/res/layout/fragment_quienes_somos.xml" value="0.2824074074074074" />
         <entry key="app/src/main/res/layout/fragment_slideshow.xml" value="0.2824074074074074" />

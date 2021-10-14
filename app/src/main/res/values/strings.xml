@@ -184,7 +184,18 @@ tarjeta de crédito o débito.</string>
         <item>English</item>
     </string-array>
     <string name="title_activity_perfil">Perfil</string>
-    
+
     <!-- Intro -->
     <string name="intro_1">¡Somos Fundación Dibujando un Mañana!</string>
+    <string name="intro_2_titulo">Tú tienes el poder de transformar el mañana.</string>
+    <string name="intro_2_texto">Nos dedicamos a impulsar el desarrollo social de niñas, niños y
+        adolescentes en situación de vulnerabilidad en México y Centro América con un modelo de
+        inversión social que entrelaza la voluntad de ayudar de diversos actores y la transforma en
+        programas sociales basados en los derechos humanos que generan impactos positivos a largo
+        plazo.</string>
+    <string name="intro_3_titulo">Nuestros logros en 23 años</string>
+    <string name="intro_3_text1">Invertidos</string>
+    <string name="intro_3_text2">Organizaciones beneficiadas en más de un proyecto.</string>
+    <string name="intro_3_text3">Niñas, niños y adolescentes atendidos por los proyectos.</string>
+    <string name="intro_3_button">Empecemos</string>
 </resources>
