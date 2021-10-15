@@ -10,6 +10,7 @@ import androidx.core.content.edit
 import com.google.gson.Gson
 import mx.brg.dibujandounmanana.MainActivity
 import mx.brg.dibujandounmanana.RegistarActivity
+import mx.brg.dibujandounmanana.admin.LoginAdminActivity
 import mx.brg.dibujandounmanana.api.ServicioDibujandoApi
 import mx.brg.dibujandounmanana.databinding.ActivityLoginBinding
 import mx.brg.dibujandounmanana.model.DonanteLogIn
@@ -53,6 +54,11 @@ class LoginActivity : AppCompatActivity() {
         binding.btnRegistrarse.setOnClickListener {
             println("registar")
             mostrarRegistarActivty()
+        }
+
+        binding.btnAdmin.setOnClickListener {
+            val loginAdminActivity = Intent(this, LoginAdminActivity::class.java)
+            startActivity(loginAdminActivity)
         }
 
         binding.btnAcceder.setOnClickListener {

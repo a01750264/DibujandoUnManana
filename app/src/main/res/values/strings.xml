@@ -201,4 +201,5 @@ tarjeta de crédito o débito.</string>
 
     <!-- Perfil xd -->
     <string name="donativos">Mis Donativos</string>
+    <string name="title_activity_admin_main">AdminMainActivity</string>
 </resources>

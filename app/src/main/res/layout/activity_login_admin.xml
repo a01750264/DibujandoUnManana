@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/red_500"
-    tools:context=".ui.LoginActivity">
-
+    tools:context=".admin.LoginAdminActivity"
+    android:background="@color/red_500">
 
     <ImageView
         android:id="@+id/imageView6"
@@ -49,7 +48,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/libre_baskerville_bold"
-                android:text="Acceder"
+                android:text="Acceder como administrador"
                 android:textAlignment="center"
                 android:textColor="@color/subtitulo"
                 android:textSize="24sp" />
@@ -100,7 +99,7 @@
                 android:layout_height="16sp" />
 
             <Button
-                android:id="@+id/btnAcceder"
+                android:id="@+id/btnAccederAdmin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/secundario"
@@ -109,67 +108,7 @@
                 android:textColor="@color/white"
                 android:textSize="14sp"
                 tools:ignore="TextContrastCheck" />
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="16sp" />
-
-            <TextView
-                android:id="@+id/textView14"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/libre_baskerville_bold"
-                android:text="¿No tienes cuenta? Registrate aquí"
-                android:textAlignment="center"
-                android:textColor="@color/subtitulo"
-                android:textSize="24sp" />
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="16sp" />
-
-            <Button
-                android:id="@+id/btnRegistrarse"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/secundario"
-                android:fontFamily="sans-serif"
-                android:text="REGISTRARSE"
-                android:textColor="@color/white"
-                android:textSize="14sp"
-                tools:ignore="TextContrastCheck" />
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="16sp" />
-
-            <TextView
-                android:id="@+id/textView16"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/libre_baskerville_bold"
-                android:text=" ¿Eres administrador?  Entra aquí"
-                android:textAlignment="center"
-                android:textColor="@color/subtitulo"
-                android:textSize="24sp" />
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="16sp" />
-
-            <Button
-                android:id="@+id/btnAdmin"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/secundario"
-                android:fontFamily="sans-serif"
-                android:text="SOY ADMINISTRADOR"
-                android:textColor="@color/white"
-                android:textSize="14sp"
-                tools:ignore="TextContrastCheck" />
         </LinearLayout>
     </ScrollView>
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
