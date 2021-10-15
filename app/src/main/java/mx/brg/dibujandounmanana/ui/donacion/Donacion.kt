@@ -1,8 +1,11 @@
 package mx.brg.dibujandounmanana.ui.donacion
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
+import android.widget.Button
 import com.paypal.checkout.approve.OnApprove
 import com.paypal.checkout.createorder.CreateOrder
 import com.paypal.checkout.createorder.CurrencyCode
@@ -14,9 +17,14 @@ import com.paypal.checkout.order.Order
 import com.paypal.checkout.order.PurchaseUnit
 import com.paypal.checkout.paymentbutton.PayPalButton
 import kotlinx.android.synthetic.main.activity_donacion.*
+import mx.brg.dibujandounmanana.MainActivity
 import mx.brg.dibujandounmanana.R
+import mx.brg.dibujandounmanana.admin.LoginAdminActivity
 
 class Donacion : AppCompatActivity() {
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_donacion)
@@ -46,7 +54,10 @@ class Donacion : AppCompatActivity() {
                 }
             }
         )
+
     }
+
+
 
 
 }
