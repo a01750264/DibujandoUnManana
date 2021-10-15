@@ -198,4 +198,7 @@ tarjeta de crédito o débito.</string>
     <string name="intro_3_text2">Organizaciones beneficiadas en más de un proyecto.</string>
     <string name="intro_3_text3">Niñas, niños y adolescentes atendidos por los proyectos.</string>
     <string name="intro_3_button">Empecemos</string>
+
+    <!-- Perfil xd -->
+    <string name="donativos">Mis Donativos</string>
 </resources>

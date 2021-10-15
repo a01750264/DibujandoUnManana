@@ -198,4 +198,7 @@ tarjeta de crédito o débito.</string>
     <string name="intro_3_text2">Organizations benefited from more than one project.</string>
     <string name="intro_3_text3">Girls, boys and teenagers served by the projects.</string>
     <string name="intro_3_button">Let\'s get started</string>
+
+    <!-- Perfil -->
+    <string name="donativos">My donations</string>
 </resources>
