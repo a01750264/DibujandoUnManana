@@ -24,13 +24,9 @@ class MisDonacionesVM : ViewModel() {
         retrofit.create(ServicioDibujandoApi::class.java)
     }
 
-    fun leerDatos() {
-        println("Buenas buenas")
-        descargarDatosMisDonaciones()
-    }
 
-    private fun descargarDatosMisDonaciones() {
-        val call = servicioDibujandoApi.verDonaciones()
+    fun descargarDatosMisDonaciones(token: String) {
+        val call = servicioDibujandoApi.verDonaciones("Bearer $token")
         println("Ya se creó Call")
         call.enqueue(object: Callback<List<MiDonacion>> {
             override fun onResponse(call: Call<List<MiDonacion>>, response: Response<List<MiDonacion>>) {

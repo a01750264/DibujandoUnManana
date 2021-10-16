@@ -93,7 +93,7 @@ class LoginActivity : AppCompatActivity() {
             override fun onResponse(call: Call<DonanteToken>, response: Response<DonanteToken>) {
                 if(response.isSuccessful){
                     if(response.code() == 200){
-                        getSharedPreferences("token", Context.MODE_PRIVATE).edit {
+                        getSharedPreferences("tokenUsuario", Context.MODE_PRIVATE).edit {
                             putString("token", response.body()?.token)
                             commit()
                         }

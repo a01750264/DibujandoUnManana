@@ -1,5 +1,7 @@
 package mx.brg.dibujandounmanana
 
+import android.app.Activity
+import android.content.Context
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -45,7 +47,9 @@ class MisDonaciones : Fragment() {
     }
 
     private fun configurarEventos() {
-        viewModel.leerDatos()
+        val preferencias = this.requireActivity().getSharedPreferences("tokenUsuario",Context.MODE_PRIVATE)
+        val token = preferencias.getString("token","none")
+        viewModel.descargarDatosMisDonaciones(token.toString())
     }
 
     private fun configurarObservadores() {

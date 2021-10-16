@@ -14,3 +14,14 @@ data class DonanteLogIn(
     @SerializedName("donantePassword")
     val donantePassword: String
 ): Serializable
+
+data class DonanteInfo(
+    @SerializedName("nombre")
+    val nombre: String,
+    @SerializedName("apellidoP")
+    val apellidoP: String,
+    @SerializedName("apellidoM")
+    val apellidoM: String,
+    @SerializedName("fecha_registro")
+    val fecha: String
+): Serializable

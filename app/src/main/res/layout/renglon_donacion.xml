@@ -15,14 +15,21 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_weight="1" />
+
             <TextView
                 android:id="@+id/tvDonacionTitulo"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="@font/libre_baskerville_bold"
                 android:text="TextView"
-                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="bold" />
 
             <Space
                 android:layout_width="match_parent"
@@ -31,11 +38,12 @@
 
             <TextView
                 android:id="@+id/tvDonacionCantidad"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="@font/nunito"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
         </LinearLayout>
 
@@ -47,16 +55,17 @@
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="16dp"
+                android:layout_height="22dp"
                 android:layout_weight="1" />
 
             <TextView
                 android:id="@+id/tvDonacionFecha"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="@font/nunito"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
         </LinearLayout>
 

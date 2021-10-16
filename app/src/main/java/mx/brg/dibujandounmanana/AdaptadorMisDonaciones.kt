@@ -44,7 +44,7 @@ class AdaptadorMisDonaciones(var arrMisDonaciones: ArrayList<MiDonacion>) :
 
         fun set(miDonacion: MiDonacion) {
             tvDonacionTitulo.text = miDonacion.titulo
-            tvDonacionCantidad.text = miDonacion.cantidad.toString()
+            tvDonacionCantidad.text = "$ ${miDonacion.cantidad.toString()}"
             tvDonacionFecha.text = miDonacion.fecha
         }
     }
