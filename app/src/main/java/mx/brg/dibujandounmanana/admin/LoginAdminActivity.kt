@@ -1,5 +1,6 @@
 package mx.brg.dibujandounmanana.admin
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import mx.brg.dibujandounmanana.databinding.ActivityLoginAdminBinding
@@ -10,10 +11,16 @@ class LoginAdminActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         binding = ActivityLoginAdminBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         supportActionBar?.hide()
+
+        binding.btnAccederAdmin.setOnClickListener {
+            val mainAdminActivity = Intent(this, MainAdminActivity::class.java)
+            startActivity(mainAdminActivity)
+        }
 
 
     }
