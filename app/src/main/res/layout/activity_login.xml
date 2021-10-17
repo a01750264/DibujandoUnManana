@@ -119,7 +119,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/libre_baskerville_bold"
-                android:text="¿No tienes cuenta? Registrate aquí"
+                android:text="¿No tienes cuenta?\nRegistrate aquí"
                 android:textAlignment="center"
                 android:textColor="@color/subtitulo"
                 android:textSize="24sp" />
@@ -148,7 +148,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/libre_baskerville_bold"
-                android:text=" ¿Eres administrador?  Entra aquí"
+                android:text=" ¿Eres administrador?\nEntra aquí"
                 android:textAlignment="center"
                 android:textColor="@color/subtitulo"
                 android:textSize="24sp" />

@@ -36,16 +36,15 @@
                 android:layout_height="154dp"
                 android:src="@drawable/ninos" />
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/textView6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="0dp"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="0dp"
                 android:fontFamily="@font/nunito"
                 android:text="@string/quienes_somos_1"
-                android:textAlignment="viewStart"
                 android:textColor="@color/subtitulo"
                 android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -70,15 +69,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="10dp" />
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/textView13"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/nunito"
                 android:text="@string/quienes_somos_2"
-                android:textAlignment="viewStart"
                 android:textColor="@color/subtitulo"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:layout_marginStart="16dp"/>
 
         </LinearLayout>
     </ScrollView>

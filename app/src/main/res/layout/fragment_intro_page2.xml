@@ -29,15 +29,15 @@
             android:textColor="@color/white"
             android:textSize="34sp" />
 
-        <TextView
+        <me.biubiubiu.justifytext.library.JustifyTextView
             android:id="@+id/textView20"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/nunito"
             android:text="@string/intro_2_texto"
-            android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:layout_marginStart="16dp"/>
     </LinearLayout>
 
     <ImageView
