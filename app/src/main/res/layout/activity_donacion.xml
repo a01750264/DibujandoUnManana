@@ -30,16 +30,15 @@
                 android:textColor="@color/subtitulo"
                 android:textSize="24sp" />
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/textView15"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="8dp"
                 android:fontFamily="@font/nunito"
                 android:text="@string/descripcion_donativo_tarjeta"
-                android:textAlignment="center"
                 android:textColor="@color/subtitulo" />
 
             <Space
@@ -122,16 +121,15 @@
                 android:textColor="@color/subtitulo"
                 android:textSize="24sp" />
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/textView16"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="8dp"
                 android:fontFamily="@font/nunito"
                 android:text="@string/descripcion_donativo_deposito"
-                android:textAlignment="center"
                 android:textColor="@color/subtitulo" />
 
             <Space

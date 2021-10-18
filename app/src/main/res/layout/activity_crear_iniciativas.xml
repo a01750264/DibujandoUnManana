@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.CrearIniciativasActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/libre_baskerville_bold"
+                android:text="Cree una nueva iniciativa"
+                android:textAlignment="center"
+                android:textColor="@color/subtitulo"
+                android:textSize="24sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tiNombreInciativa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:ems="10">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etNombreInciativa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito"
+                    android:hint="Nombre de la inciativa"
+                    android:inputType="text"
+                    android:textColor="@color/subtitulo"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tiDescripcionInciativa"
+                android:layout_width="match_parent"
+                android:layout_height="134dp"
+                android:layout_marginTop="16dp"
+                android:ems="10">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDescripcionInciativa"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/nunito"
+                    android:hint="Descripción"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/subtitulo"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tiNumParticpantesInciativa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:ems="10">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etNumParticipantesInciativa"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/nunito"
+                    android:hint="Número máximo de particpantes"
+                    android:inputType="number"
+                    android:textColor="@color/subtitulo"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnSelImagen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:backgroundTint="@color/secundario"
+                android:fontFamily="sans-serif"
+                android:text="SELECCIONAR IMAGEN"
+                app:icon="@android:drawable/ic_menu_gallery" />
+
+            <Button
+                android:id="@+id/btnCrearIniciativa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:backgroundTint="@color/secundario"
+                android:fontFamily="sans-serif"
+                android:text="CREAR"
+                app:icon="@android:drawable/ic_input_add" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

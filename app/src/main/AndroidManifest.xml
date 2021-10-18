@@ -14,11 +14,21 @@
         android:theme="@style/Theme.DibujandoUnManana"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".admin.CrearCampaniasActivity"
+            android:exported="true"
+            android:label="@string/title_activity_crear_campanias"/>
+        <activity
+            android:name=".admin.CrearIniciativasActivity"
+            android:exported="true"
+            android:label="@string/title_activity_crear_iniciativas" />
+        <activity
             android:name=".admin.EditarIniciativasActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:label="@string/title_activity_editar_iniciativas" />
         <activity
             android:name=".admin.EditarCampaniasActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:label="@string/title_activity_editar_campanias" />
         <activity
             android:name=".admin.MainAdminActivity"
             android:exported="true"

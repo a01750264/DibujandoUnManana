@@ -209,4 +209,16 @@ tarjeta de crédito o débito.</string>
         iniciatives of Dibujando Un Mañana</string>
     <string name="editar_campañas_admin_main">Edit Campaigns</string>
     <string name="editar_iniciativas_admin_main">Edit Iniciatives</string>
+
+    <!-- Editar Campanias -->
+    <string name="title_activity_editar_campanias">Edit Campaigns</string>
+
+    <!-- Editar Iniciativas -->
+    <string name="title_activity_editar_iniciativas">Edir Iniciatives</string>
+
+    <!-- Crear Campanias -->
+    <string name="title_activity_crear_campanias">Create Campaigns</string>
+
+    <!-- Crear Iniciativas -->
+    <string name="title_activity_crear_iniciativas">Create Iniciative</string>
 </resources>
