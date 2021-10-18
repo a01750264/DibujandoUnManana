@@ -6,4 +6,57 @@
     android:layout_height="match_parent"
     tools:context=".admin.MainAdminActivity">
 
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/libre_baskerville_bold"
+            android:text="@string/bienvenido_admin_main"
+            android:textAlignment="viewStart"
+            android:textColor="@color/subtitulo"
+            android:textSize="34sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/nunito"
+            android:text="@string/instrucciones_admin_main"
+            android:textAlignment="viewStart"
+            android:textColor="@color/subtitulo"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnEditarCampanias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/secundario"
+            android:text="@string/editar_campañas_admin_main"
+            app:icon="@drawable/ic_edit" />
+
+        <Button
+            android:id="@+id/btnEditarIniciativas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/secundario"
+            android:text="@string/editar_iniciativas_admin_main"
+            app:icon="@drawable/ic_edit"/>
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

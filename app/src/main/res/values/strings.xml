@@ -200,5 +200,13 @@ tarjeta de crédito o débito.</string>
 
     <!-- Perfil xd -->
     <string name="donativos">Mis Donativos</string>
-    <string name="title_activity_admin_main">AdminMainActivity</string>
+
+
+    <!-- Main Admin -->
+    <string name="title_activity_admin_main">Inicio</string>
+    <string name="bienvenido_admin_main">¡Bienvenido!</string>
+    <string name="instrucciones_admin_main">Cree, edite o elimine alguna de las campañas o
+        iniciativas de Dibujando Un Mañana</string>
+    <string name="editar_campañas_admin_main">Editar Campañas</string>
+    <string name="editar_iniciativas_admin_main">Editar Iniciativas</string>
 </resources>
