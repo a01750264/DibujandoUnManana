@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">DibujandoUnManana</string>
+    <string name="app_name">DibujandoUnMañana</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
@@ -7,7 +7,9 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
+    <!-- Inicio -->
     <string name="menu_home">Inicio</string>
+    <string name="menu_home_descripcion">¡Somos Fundación Dibujando Un Mañana! Gracias por descargar nuestra app. Aquí puedes conocernos un poco más acerca de nosotros y lo que hacemos. Tú puedes hacer la diferencia, ya sea donando en alguna de nuestras campañas o sumándote en alguna de nuestras iniciativas. Si tienes alguna pregunta, no dudes en contactarnos o contándanos alguna idea para una iniciativa. \n</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="menu_quienessomos">¿Quiénes Somos?</string>
