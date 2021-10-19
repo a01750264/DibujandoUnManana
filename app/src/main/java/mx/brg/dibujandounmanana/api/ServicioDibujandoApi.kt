@@ -2,10 +2,7 @@ package mx.brg.dibujandounmanana.api
 
 import android.content.Context
 import android.content.SharedPreferences
-import mx.brg.dibujandounmanana.model.DonanteInfo
-import mx.brg.dibujandounmanana.model.DonanteLogIn
-import mx.brg.dibujandounmanana.model.DonanteToken
-import mx.brg.dibujandounmanana.model.MiDonacion
+import mx.brg.dibujandounmanana.model.*
 import retrofit2.Call
 import retrofit2.http.*
 
@@ -16,6 +13,14 @@ interface ServicioDibujandoApi
     @Headers("Content-Type: application/json")
     @POST("donante/logIn")
     fun logIn(@Body body: DonanteLogIn): Call<DonanteToken>
+
+    @Headers("Content-Type: application/json")
+    @POST("administrador/logIn")
+    fun logInAdmin(@Body body: AdminLogIn): Call<AdminToken>
+
+    @POST("iniciativa/crearIniciativa")
+    fun crearIniciativa(@Header("Authorization") token: String,
+                        @Body body: Iniciativa): Call<Map<String, String>>
 
     //@Headers("Authorization: Bearer")
     @GET("donante/verDonaciones")

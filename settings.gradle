@@ -3,7 +3,7 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        jcenter() // Warning: this repository is going to shut down soon
+        // Warning: this repository is going to shut down soon
         // This private repository is required to resolve the Cardinal SDK transitive dependency.
         maven {
             url  "https://cardinalcommerceprod.jfrog.io/artifactory/android"
