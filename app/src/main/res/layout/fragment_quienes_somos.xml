@@ -79,6 +79,43 @@
                 android:textSize="14sp"
                 android:layout_marginStart="16dp"/>
 
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/libre_baskerville_bold"
+                android:text="Nuestro equipo"
+                android:textAlignment="viewStart"
+                android:textColor="@color/subtitulo"
+                android:textSize="24sp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"/>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView14"
+                        android:layout_width="770dp"
+                        android:layout_height="650dp"
+                        android:src="@drawable/equipo_1" />
+
+                    <ImageView
+                        android:id="@+id/imageView18"
+                        android:layout_width="770dp"
+                        android:layout_height="650dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/equipo_2" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
         </LinearLayout>
     </ScrollView>
 

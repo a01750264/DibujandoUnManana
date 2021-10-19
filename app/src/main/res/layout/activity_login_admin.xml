@@ -67,7 +67,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/nunito"
-                    android:hint="Usuario o Correo Electrónico"
+                    android:hint="Correo Electrónico"
                     android:inputType="textEmailAddress"
                     android:textColor="@color/subtitulo"
                     android:textSize="16sp" />

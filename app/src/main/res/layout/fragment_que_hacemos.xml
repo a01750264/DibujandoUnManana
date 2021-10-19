@@ -57,6 +57,78 @@
                 android:src="@drawable/modelo_fdum"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/libre_baskerville_bold"
+                android:text="Modelo Financiero"
+                android:textAlignment="center"
+                android:textColor="@color/subtitulo"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/nunito"
+                android:text="@string/quehacemos_modelo_financiero"
+                android:textColor="@color/subtitulo"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4"
+                android:layout_marginStart="16dp"/>
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/modelo_financiero"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/libre_baskerville_bold"
+                android:text="Modelo Inversión Social"
+                android:textAlignment="center"
+                android:textColor="@color/subtitulo"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/nunito"
+                android:text="@string/quehacemos_modelo_inv_social"
+                android:textColor="@color/subtitulo"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4"
+                android:layout_marginStart="16dp"/>
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/modelo_inversion"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginBottom="16dp"/>
         </LinearLayout>
     </ScrollView>
 

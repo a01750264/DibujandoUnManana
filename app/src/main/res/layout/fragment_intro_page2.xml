@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/secundario"
-    tools:context=".IntroPage2" >
+    tools:context="intro.IntroPage2" >
 
     <LinearLayout
         android:layout_width="0dp"

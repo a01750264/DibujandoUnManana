@@ -9,7 +9,7 @@
 
     <!-- Inicio -->
     <string name="menu_home">Inicio</string>
-    <string name="menu_home_descripcion">¡Somos Fundación Dibujando Un Mañana! Gracias por descargar nuestra app. Aquí puedes conocernos un poco más acerca de nosotros y lo que hacemos. Tú puedes hacer la diferencia, ya sea donando en alguna de nuestras campañas o sumándote en alguna de nuestras iniciativas. Si tienes alguna pregunta, no dudes en contactarnos o contándanos alguna idea para una iniciativa. \n</string>
+    <string name="menu_home_descripcion">¡Somos Fundación Dibujando Un Mañana! Gracias por descargar nuestra app. Aquí puedes conocer un poco más acerca de nosotros y lo que hacemos. Tú puedes hacer la diferencia, ya sea donando en alguna de nuestras campañas o sumándote en alguna de nuestras iniciativas. Si tienes alguna pregunta, no dudes en contactarnos o contándanos alguna idea para una iniciativa. \n</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="menu_quienessomos">¿Quiénes Somos?</string>
@@ -19,6 +19,8 @@
     <string name="menu_contactanos">Contáctanos</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Quienes Somos -->
     <string name="quienes_somos_1">Nos dedicamos a impulsar el desarrollo social de niñas, niños y
         adolescentes en situación de vulnerabilidad en México y Centro América con un modelo de
         inversión social que entrelaza la voluntad de ayudar de diversos actores y la transforma
@@ -44,6 +46,19 @@
         voluntades, basándonos en estándares internacionales como la Cooperación Triangular,
         Gestión para Resultados de Desarrollo y Enfoque de Derechos Humanos, para fortalecerlas y
         potenciar su alcance e inversión social.</string>
+    <string name="quehacemos_modelo_financiero">Cada peso donado a Fundación Dibujando un Mañana se multiplica en
+        $6,16 en retorno social de la inversión; de acuerdo a un estudio de Filantrofilia en 2019. \n
+
+        ¿Esto qué quiere decir? \n
+
+        Que contamos con la capacidad de acompañar a nuestros aliados (empresas y personas) a
+        realizar las inversiones más seguras y transparentes; y a las OSC a ser eficientes y
+        sostenibles; al realizar paso a paso todo el proceso; dando un valor agregado más allá de
+        la inversión financiera que se realiza. \n</string>
+    <string name="quehacemos_modelo_inv_social">A través de nuestro Modelo de Inversión Social
+        fortalecemos a las organizaciones de la sociedad civil para que brinden una atención
+        integral a las niñas, niños y adolescentes, basada en un Enfoque de Derechos Humanos y
+        Enfoque de Gestión para Resultados de Desarrollo. \n</string>
 
     <string name="title_activity_donar">Donativos</string>
     <string name="descripcion_donativo_tarjeta">Haz tu donativo/pago único de forma segura utilizando tu tarjeta de crédito o débito.\n</string>
