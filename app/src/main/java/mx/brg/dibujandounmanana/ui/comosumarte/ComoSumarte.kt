@@ -1,5 +1,7 @@
 package mx.brg.dibujandounmanana.ui.comosumarte
 
+import android.content.Intent
+import android.net.Uri
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,26 +9,28 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import mx.brg.dibujandounmanana.R
+import mx.brg.dibujandounmanana.databinding.FragmentComoSumarteBinding
 
 class ComoSumarte : Fragment() {
 
-    companion object {
-        fun newInstance() = ComoSumarte()
-    }
-
-    private lateinit var viewModel: ComoSumarteViewModel
+    private lateinit var binding: FragmentComoSumarteBinding
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_como_sumarte, container, false)
+        binding = FragmentComoSumarteBinding.inflate(layoutInflater)
+        val vista = binding.root
+        return vista
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(ComoSumarteViewModel::class.java)
-        // TODO: Use the ViewModel
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.btnRegistrarIniciativaUsuario.setOnClickListener {
+            val registrarIniciativaActivity = Intent(activity, RegistrarIniciativaActivity::class.java)
+            startActivity(registrarIniciativaActivity)
+        }
     }
 
 }

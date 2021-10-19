@@ -15,9 +15,13 @@
         android:theme="@style/Theme.DibujandoUnManana"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".ui.comosumarte.RegistrarIniciativaActivity"
+            android:exported="true"
+            android:label="@string/titulo_registrar_iniciativa"/>
+        <activity
             android:name=".admin.CrearCampaniasActivity"
             android:exported="true"
-            android:label="@string/title_activity_crear_campanias"/>
+            android:label="@string/title_activity_crear_campanias" />
         <activity
             android:name=".admin.CrearIniciativasActivity"
             android:exported="true"
