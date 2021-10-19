@@ -152,35 +152,47 @@
                     android:textSize="16sp" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/tiFechaNacimiento"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="32dp"
-                android:layout_marginEnd="16dp"
-                android:ems="10">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etFechaNacimiento"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/nunito"
-                    android:hint="Fecha de nacimiento"
-                    android:inputType="date"
-                    android:textColor="@color/subtitulo"
-                    android:textSize="16sp" />
-            </com.google.android.material.textfield.TextInputLayout>
-
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvFechaNac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/nunito"
+                    android:text="dd-MM-yyyy"
+                    android:textAlignment="center"
+                    android:textColor="@color/subtitulo"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btnFechaNac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/secundario"
+                    android:fontFamily="sans-serif"
+                    android:text="Fecha de Nacimiento"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    tools:ignore="TextContrastCheck"></Button>
+
+            </LinearLayout>
 
 
             <Button
                 android:id="@+id/btnRegistarCuenta"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
                 android:backgroundTint="@color/secundario"
                 android:fontFamily="sans-serif"
                 android:text="REGISTRARSE"

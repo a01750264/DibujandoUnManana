@@ -1,7 +1,9 @@
 package mx.brg.dibujandounmanana
 
+import android.app.DatePickerDialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.DatePicker
 import android.widget.EditText
 import android.widget.Toast
 import mx.brg.dibujandounmanana.R
@@ -9,6 +11,7 @@ import mx.brg.dibujandounmanana.databinding.ActivityMainBinding
 import mx.brg.dibujandounmanana.databinding.ActivityRegistarBinding
 import java.text.ParseException
 import java.text.SimpleDateFormat
+import java.util.*
 
 class RegistarActivity : AppCompatActivity() {
 
@@ -22,6 +25,15 @@ class RegistarActivity : AppCompatActivity() {
 
         supportActionBar?.hide()
 
+        val calendario = Calendar.getInstance()
+        val datePicker = DatePickerDialog.OnDateSetListener { view, year, month, day ->
+            calendario.set(Calendar.YEAR, year)
+            calendario.set(Calendar.MONTH, month)
+            calendario.set(Calendar.DAY_OF_MONTH, day)
+            val fechaNacStr = formatInput(calendario)
+            binding.tvFechaNac.text = fechaNacStr
+
+        }
         binding = ActivityRegistarBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -29,26 +41,35 @@ class RegistarActivity : AppCompatActivity() {
             val camposCompletos = verificarCamposCompletos()
             val correoValido = verificarCorreo()
             val pswdValido = verificarPassword()
-            //val fechaValido = verificarFechaNac()
+            val fechaValido = verificarFechaNac()
+        }
+
+        binding.btnFechaNac.setOnClickListener {
+            val datePicker = DatePickerDialog(this, datePicker, calendario.get(Calendar.YEAR), calendario.get(Calendar.MONTH),
+            calendario.get(Calendar.DAY_OF_MONTH))
+            datePicker.datePicker.maxDate = System.currentTimeMillis()
+            datePicker.show()
         }
 
     }
 
-    /*
-    private fun verificarFechaNac(): Boolean {
-        var fechaValido = true
-        val format = SimpleDateFormat("dd-MM-yyyy")
-        val date = binding.etFechaNacimiento.text.toString()
-        format.setLenient(false)
-
-        try {
-            format.parse(date)
-        } catch (e: ParseException) { fechaValido = false }
-
-        return fechaValido
+    private fun formatInput(calendario: Calendar): String {
+        val formato = "dd-MM-yyyy"
+        val sdf = SimpleDateFormat(formato, Locale.CANADA)
+        println(sdf.format(calendario.time).toString())
+        return sdf.format(calendario.time).toString()
     }
 
-     */
+
+    private fun verificarFechaNac(): Boolean {
+        var fechaValido = true
+        if (binding.tvFechaNac.text == "dd-MM-yyyy") {
+            Toast.makeText(applicationContext, "Ingresa una fecha de nacimiento",
+                Toast.LENGTH_SHORT).show()
+            fechaValido = false
+        }
+        return fechaValido
+    }
 
     private fun verificarPassword(): Boolean {
         var pswdValido = true
@@ -74,7 +95,7 @@ class RegistarActivity : AppCompatActivity() {
     private fun verificarCamposCompletos(): Boolean {
         val listaEt = listOf<EditText>(binding.etEmailRegistrar, binding.etContrasenaRegistar,
             binding.etNombreRegistrar, binding.etApellidoPaternoRegistrar,
-            binding.etApellidoMaternoRegistrar, binding.etFechaNacimiento)
+            binding.etApellidoMaternoRegistrar)
         var camposCompletos = true
         for (et in listaEt) {
             if (et.text.isEmpty()) {
