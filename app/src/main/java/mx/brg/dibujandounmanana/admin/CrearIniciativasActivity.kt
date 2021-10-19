@@ -1,13 +1,16 @@
 package mx.brg.dibujandounmanana.admin
 
 import android.app.Activity
+import android.app.ProgressDialog
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.net.Uri
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.google.firebase.storage.FirebaseStorage
 import mx.brg.dibujandounmanana.R
 import mx.brg.dibujandounmanana.api.ServicioDibujandoApi
 import mx.brg.dibujandounmanana.databinding.ActivityCrearIniciativasBinding
@@ -22,6 +25,8 @@ import java.util.jar.Manifest
 class CrearIniciativasActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityCrearIniciativasBinding
+    private lateinit var imageUri: Uri
+    private var imagen = false
 
     private val retrofit by lazy {
         Retrofit.Builder()
@@ -65,39 +70,61 @@ class CrearIniciativasActivity : AppCompatActivity() {
         }
 
         binding.btnCrearIniciativa.setOnClickListener {
-            val preferencias = this.getSharedPreferences("tokenAdmin", Context.MODE_PRIVATE)
-            val token = preferencias.getString("token","none").toString()
-            val nombre = binding.etNombreInciativa.text.toString()
-            val descripcion = binding.etDescripcionInciativa.text.toString()
-            val maxPart = binding.etNumParticipantesInciativa.text.toString().toInt()
-            val iniciativa = Iniciativa(nombre, descripcion, maxPart)
+            if (imagen == true)
+            {
+                val progressDialog = ProgressDialog(this)
+                progressDialog.setMessage("Subiendo imagen ...")
+                progressDialog.setCancelable(false)
+                progressDialog.show()
 
-            val call = servicioDibujandoApi.crearIniciativa("Bearer $token", iniciativa)
-            call.enqueue(object: Callback<Map<String,String>> {
-                override fun onResponse(call: Call<Map<String, String>>, response: Response<Map<String, String>>) {
-                    if (response.isSuccessful)
+                val preferencias = this.getSharedPreferences("tokenAdmin", Context.MODE_PRIVATE)
+                val token = preferencias.getString("token","none").toString()
+                val nombre = binding.etNombreInciativa.text.toString()
+                val descripcion = binding.etDescripcionInciativa.text.toString()
+                val maxPart = binding.etNumParticipantesInciativa.text.toString().toInt()
+                val iniciativa = Iniciativa(nombre, descripcion, maxPart)
+                val fileName = "${iniciativa.nombre}${iniciativa.maxPart}"
+                val storageReference = FirebaseStorage.getInstance().getReference("iniciativas/$fileName")
+
+                storageReference.putFile(imageUri).addOnSuccessListener {
+                    Toast.makeText(this, "Imagen subida correctamente", Toast.LENGTH_SHORT).show()
+                    if (progressDialog.isShowing)
                     {
-                        if (response.code() == 200)
-                        {
-                            println(response.body())
-                        } else {
-                            println("Error: ${response.errorBody()}")
-                        }
-                    } else if (response.code() == 403)
-                    {
-                        println("Error:")
-                        println(response.body())
-                    } else if (response.code() == 500)
-                    {
-                        println("Error:")
-                        println(response.body())
+                        progressDialog.dismiss()
                     }
+                }.addOnFailureListener{
+                    Toast.makeText(this, "Algo falló con la imagen", Toast.LENGTH_SHORT).show()
                 }
 
-                override fun onFailure(call: Call<Map<String, String>>, t: Throwable) {
-                    println("Error: ${t.localizedMessage}")
-                }
-            })
+                val call = servicioDibujandoApi.crearIniciativa("Bearer $token", iniciativa)
+                call.enqueue(object: Callback<Map<String,String>> {
+                    override fun onResponse(call: Call<Map<String, String>>, response: Response<Map<String, String>>) {
+                        if (response.isSuccessful)
+                        {
+                            if (response.code() == 200)
+                            {
+                                println(response.body())
+                            } else {
+                                println("Error: ${response.errorBody()}")
+                            }
+                        } else if (response.code() == 403)
+                        {
+                            println("Error:")
+                            println(response.body())
+                        } else if (response.code() == 500)
+                        {
+                            println("Error:")
+                            println(response.body())
+                        }
+                    }
+
+                    override fun onFailure(call: Call<Map<String, String>>, t: Throwable) {
+                        println("Error: ${t.localizedMessage}")
+                    }
+                })
+            } else {
+                Toast.makeText(applicationContext, "Selecciona una imagen", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 
@@ -125,7 +152,8 @@ class CrearIniciativasActivity : AppCompatActivity() {
         super.onActivityResult(requestCode, resultCode, data)
         if (resultCode == Activity.RESULT_OK && requestCode == IMAGE_PICK_CODE)
         {
-            val imagen = data?.data
+            imageUri = data?.data!!
+            imagen = true
         }
     }
 }

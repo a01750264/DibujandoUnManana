@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "308887923976",
+    "project_id": "dibujando-un-manana",
+    "storage_bucket": "dibujando-un-manana.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:308887923976:android:2a7ea2345f592aa692d0bd",
+        "android_client_info": {
+          "package_name": "mx.brg.dibujandounmanana"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "308887923976-4m1a9bg71jktjb9iltpv0jfsjmeio5v9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mx.brg.dibujandounmanana",
+            "certificate_hash": "25072b7a36eba25c2d818fe17edf9638904aed04"
+          }
+        },
+        {
+          "client_id": "308887923976-8j3niq1rtmp1rj127e2b5b0ctqsll96i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCX3YIf5lnlwfvnozvtR56-iIq1wgFV0Z8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "308887923976-8j3niq1rtmp1rj127e2b5b0ctqsll96i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
