@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     app:cardBackgroundColor="@color/white"
@@ -51,7 +52,9 @@
                 android:id="@+id/ivCampania"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/nino" />
+                android:src="@drawable/nino"
+                app:srcCompat="@drawable/fdum_logo_completo"
+                tools:srcCompat="@drawable/fdum_logo_completo" />
         </androidx.cardview.widget.CardView>
 
         <LinearLayout

@@ -1,13 +1,17 @@
 package mx.brg.dibujandounmanana
 
+import android.app.ProgressDialog
+import android.graphics.BitmapFactory
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.LinearLayout
-import android.widget.TextView
+import android.widget.*
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.google.firebase.storage.FirebaseStorage
+import kotlinx.android.synthetic.main.nav_header_main.view.*
 import mx.brg.dibujandounmanana.model.CampaniaBD
+import java.io.File
 
 
 class AdaptadorListaCampanias (var arrCampanias: ArrayList<CampaniaBD>) :
@@ -53,11 +57,38 @@ class AdaptadorListaCampanias (var arrCampanias: ArrayList<CampaniaBD>) :
 
     class ListaCampaniasViewHolder(vista: View) : RecyclerView.ViewHolder(vista) {
         private val tvTituloCampania = vista.findViewById<TextView>(R.id.tvTituloCampania)
+        private val ivCampania = vista.findViewById<ImageView>(R.id.ivCampania)
 
         fun set(campania: CampaniaBD)
         {
+            val progressDialog = ProgressDialog(itemView.context)
+            progressDialog.setMessage("Cargando ...")
+            progressDialog.setCancelable(false)
+            progressDialog.show()
+
             tvTituloCampania.setText(campania.nombre)
-            val fileName = "${campania.nombre}${campania.maxPart}"
+            val fileName = campania.nombre
+            println(fileName)
+            val storageRef = FirebaseStorage.getInstance().reference.child("campanias/$fileName")
+            val file = File.createTempFile("tempImage", "jpg")
+            storageRef.getFile(file).addOnSuccessListener {
+
+                if (progressDialog.isShowing)
+                {
+                    progressDialog.dismiss()
+                }
+
+                val bitmap = BitmapFactory.decodeFile(file.absolutePath)
+                ivCampania.setImageBitmap(bitmap)
+
+            }.addOnFailureListener{
+                if (progressDialog.isShowing)
+                {
+                    progressDialog.dismiss()
+                }
+
+                Toast.makeText(itemView.context, "No se recuperó la imagen", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 

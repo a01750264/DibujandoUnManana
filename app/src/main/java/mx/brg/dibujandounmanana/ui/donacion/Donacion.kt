@@ -6,11 +6,13 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Button
+import android.widget.EditText
 import com.paypal.checkout.approve.OnApprove
 import com.paypal.checkout.createorder.CreateOrder
 import com.paypal.checkout.createorder.CurrencyCode
 import com.paypal.checkout.createorder.OrderIntent
 import com.paypal.checkout.createorder.UserAction
+import com.paypal.checkout.error.OnError
 import com.paypal.checkout.order.Amount
 import com.paypal.checkout.order.AppContext
 import com.paypal.checkout.order.Order
@@ -31,6 +33,13 @@ class Donacion : AppCompatActivity() {
         val payPalButton = findViewById<PayPalButton>(R.id.payPalButton)
         payPalButton.setup(
             createOrder = CreateOrder { createOrderActions ->
+                val montoADonarInt = findViewById<EditText>(R.id.etMonto).text.toString().toInt()
+                var montoADonarStr = montoADonarInt.toString()
+                if (montoADonarStr == "0") {
+                    montoADonarStr = "1.00"
+                } else {
+                    montoADonarStr += ".00"
+                }
                 val order = Order(
                     intent = OrderIntent.CAPTURE,
                     appContext = AppContext(
@@ -40,7 +49,7 @@ class Donacion : AppCompatActivity() {
                         PurchaseUnit(
                             amount = Amount(
                                 currencyCode = CurrencyCode.MXN,
-                                value = "10.00"
+                                value = montoADonarStr
                             )
                         )
                     )
@@ -52,6 +61,9 @@ class Donacion : AppCompatActivity() {
                     Log.i("CaptureOrder","CaptureOrderResult: $captureOrderResult")
                     println("CaptureOrderResult: $captureOrderResult")
                 }
+            },
+            onError = OnError { errorInfo ->
+                Log.d("On Error", "Error: ${errorInfo}")
             }
         )
 
