@@ -8,9 +8,8 @@
     app:cardElevation="5dp"
     app:cardUseCompatPadding="true">
 
-
     <LinearLayout
-        android:id="@+id/layoutRenglonCampaniaAdmin"
+        android:id="@+id/layoutRenglonIniciativaAdmin"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -30,7 +29,7 @@
                 android:layout_weight="0.06" />
 
             <TextView
-                android:id="@+id/tvTituloCampaniaAdmin"
+                android:id="@+id/tvTituloIniciativaAdmin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -50,12 +49,10 @@
             app:cardBackgroundColor="@color/borde_imagen">
 
             <ImageView
-                android:id="@+id/ivCampaniaAdmin"
+                android:id="@+id/ivIniciativaAdmin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/fdum_logo_completo"
-                app:srcCompat="@drawable/fdum_logo_completo"
-                tools:srcCompat="@drawable/fdum_logo_completo" />
+                app:srcCompat="@drawable/fdum_logo_completo" />
         </androidx.cardview.widget.CardView>
 
         <LinearLayout
@@ -64,7 +61,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btnBorrarCampania"
+                android:id="@+id/btnBorrarIniciativa"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -74,13 +71,12 @@
                 android:insetBottom="0dp"
                 android:text="BORRAR"
                 android:textAlignment="viewStart"
-                android:textColor="@color/red_500"/>
+                android:textColor="@color/red_500" />
 
             <Space
                 android:layout_width="270dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
         </LinearLayout>
-
     </LinearLayout>
 </androidx.cardview.widget.CardView>
