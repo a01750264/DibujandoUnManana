@@ -1,14 +1,23 @@
 package mx.brg.dibujandounmanana
 
 import android.app.DatePickerDialog
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.DatePicker
 import android.widget.EditText
 import android.widget.Toast
 import mx.brg.dibujandounmanana.R
+import mx.brg.dibujandounmanana.api.ServicioDibujandoApi
 import mx.brg.dibujandounmanana.databinding.ActivityMainBinding
 import mx.brg.dibujandounmanana.databinding.ActivityRegistarBinding
+import mx.brg.dibujandounmanana.model.DonanteSignUp
+import mx.brg.dibujandounmanana.ui.LoginActivity
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 import java.text.ParseException
 import java.text.SimpleDateFormat
 import java.util.*
@@ -18,6 +27,17 @@ class RegistarActivity : AppCompatActivity() {
     private lateinit var binding: ActivityRegistarBinding
     private val emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+"
     private val emailPatternMx = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+\\.+[a-z]+"
+
+    private val retrofit by lazy {
+        Retrofit.Builder()
+            .baseUrl("http://192.168.1.64:8080/")
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+    }
+
+    private val servicioDibujandoApi by lazy {
+        retrofit.create(ServicioDibujandoApi::class.java)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,6 +62,37 @@ class RegistarActivity : AppCompatActivity() {
             val correoValido = verificarCorreo()
             val pswdValido = verificarPassword()
             val fechaValido = verificarFechaNac()
+
+            val nombre = binding.etNombreRegistrar.text.toString()
+            val apellidoP = binding.etApellidoPaternoRegistrar.text.toString()
+            val apellidoM = binding.etApellidoMaternoRegistrar.text.toString()
+            val email = binding.etEmailRegistrar.text.toString()
+            val pass = binding.etContrasenaRegistar.text.toString()
+            val fecha = binding.tvFechaNac.text.toString()
+
+            val donanteSignUp = DonanteSignUp(nombre,apellidoP,apellidoM,email,pass,fecha)
+            val call = servicioDibujandoApi.signUp(donanteSignUp)
+            call.enqueue(object: Callback<Map<String,String>> {
+                override fun onResponse(
+                    call: Call<Map<String, String>>,
+                    response: Response<Map<String, String>>
+                ) {
+                    if (response.isSuccessful)
+                    {
+                        Toast.makeText(this@RegistarActivity, "Registro Exitoso", Toast.LENGTH_SHORT).show()
+                        val loginActivity = Intent(this@RegistarActivity, LoginActivity::class.java)
+                        this@RegistarActivity
+                        startActivity(loginActivity)
+                    } else {
+                        println(response.body())
+                    }
+                }
+
+                override fun onFailure(call: Call<Map<String, String>>, t: Throwable) {
+                    println("${t.localizedMessage}")
+                }
+
+            })
         }
 
         binding.btnFechaNac.setOnClickListener {
@@ -54,8 +105,8 @@ class RegistarActivity : AppCompatActivity() {
     }
 
     private fun formatInput(calendario: Calendar): String {
-        val formato = "dd-MM-yyyy"
-        val sdf = SimpleDateFormat(formato, Locale.CANADA)
+        val formato = "yyyy-MM-dd"
+        val sdf = SimpleDateFormat(formato, Locale.JAPAN)
         println(sdf.format(calendario.time).toString())
         return sdf.format(calendario.time).toString()
     }
@@ -63,7 +114,7 @@ class RegistarActivity : AppCompatActivity() {
 
     private fun verificarFechaNac(): Boolean {
         var fechaValido = true
-        if (binding.tvFechaNac.text == "dd-MM-yyyy") {
+        if (binding.tvFechaNac.text == "yyyy-MM-dd") {
             Toast.makeText(applicationContext, "Ingresa una fecha de nacimiento",
                 Toast.LENGTH_SHORT).show()
             fechaValido = false

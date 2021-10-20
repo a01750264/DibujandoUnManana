@@ -39,3 +39,18 @@ data class DonanteDonacionIniciativa(
     @SerializedName("donacionCantidad")
     val cantidad: Float
 ): Serializable
+
+data class DonanteSignUp(
+    @SerializedName("donanteNombre")
+    val nombre: String,
+    @SerializedName("donanteApellidoP")
+    val apellidoP: String,
+    @SerializedName("donanteApellidoM")
+    val apellidoM: String,
+    @SerializedName("donanteEmail")
+    val email: String,
+    @SerializedName("donantePass")
+    var pass: String,
+    @SerializedName("donanteFecha")
+    val fecha: String
+)
