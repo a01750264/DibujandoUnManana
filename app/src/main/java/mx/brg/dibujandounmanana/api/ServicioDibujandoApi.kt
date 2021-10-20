@@ -28,4 +28,7 @@ interface ServicioDibujandoApi
 
     @GET("donante/verInfoDonante")
     fun verInfoDonante(@Header("Authorization") token: String): Call<DonanteInfo>
+
+    @GET("donativo/verDonativos")
+    fun verCampanias(): Call<List<CampaniaBD>>
 }

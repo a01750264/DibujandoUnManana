@@ -9,11 +9,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import mx.brg.dibujandounmanana.R
-import mx.brg.dibujandounmanana.databinding.FragmentCampaniasBinding
 
 class Campanias : Fragment() {
-
-    private lateinit var binding: FragmentCampaniasBinding
 
     companion object {
         fun newInstance() = Campanias()
@@ -22,27 +19,17 @@ class Campanias : Fragment() {
     private lateinit var viewModel: CampaniasViewModel
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentCampaniasBinding.inflate(layoutInflater)
-        val vista = binding.root
-        return vista
+        return inflater.inflate(R.layout.fragment_campanias, container, false)
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view , savedInstanceState)
-        binding.btnVerMas2.setOnClickListener{
-            val urlIntent = Intent(Intent.ACTION_VIEW)
-            urlIntent.data = Uri.parse("https://www.dibujando.org.mx/personas/")
-            startActivity(urlIntent)
-        }
-
-        binding.btnVerMasJuntos.setOnClickListener{
-            val urlIntent = Intent(Intent.ACTION_VIEW)
-            urlIntent.data = Uri.parse("https://www.dibujando.org.mx/")
-            startActivity(urlIntent)
-        }
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+        viewModel = ViewModelProvider(this).get(CampaniasViewModel::class.java)
+        // TODO: Use the ViewModel
     }
 
 }

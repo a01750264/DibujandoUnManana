@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Documents/Quinto Semestre/Bloque/Android/DibujandoUnManana/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.26666666666666666" />
         <entry key="..\:/Documents/Quinto Semestre/Bloque/Android/DibujandoUnManana/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/Documents/Quinto Semestre/Bloque/Android/DibujandoUnManana/app/src/main/res/layout/activity_main.xml" value="0.25052083333333336" />
         <entry key="..\:/Documents/Quinto Semestre/Bloque/Android/DibujandoUnManana/app/src/main/res/layout/activity_perfil.xml" value="0.25052083333333336" />
@@ -11,11 +12,14 @@
         <entry key="..\:/Documents/Quinto Semestre/Bloque/Android/DibujandoUnManana/app/src/main/res/layout/content_main.xml" value="0.25052083333333336" />
         <entry key="..\:/Documents/Quinto Semestre/Bloque/Android/DibujandoUnManana/app/src/main/res/layout/fragment_campanias.xml" value="0.25052083333333336" />
         <entry key="..\:/Documents/Quinto Semestre/Bloque/Android/DibujandoUnManana/app/src/main/res/layout/fragment_intro_page2.xml" value="0.25052083333333336" />
+        <entry key="..\:/Documents/Quinto Semestre/Bloque/Android/DibujandoUnManana/app/src/main/res/layout/fragment_lista_campanias.xml" value="0.25052083333333336" />
         <entry key="..\:/Documents/Quinto Semestre/Bloque/Android/DibujandoUnManana/app/src/main/res/layout/fragment_mis_donaciones.xml" value="0.25052083333333336" />
         <entry key="..\:/Documents/Quinto Semestre/Bloque/Android/DibujandoUnManana/app/src/main/res/layout/fragment_quienes_somos.xml" value="0.25052083333333336" />
         <entry key="..\:/Documents/Quinto Semestre/Bloque/Android/DibujandoUnManana/app/src/main/res/layout/nav_header_main.xml" value="0.25052083333333336" />
+        <entry key="..\:/Documents/Quinto Semestre/Bloque/Android/DibujandoUnManana/app/src/main/res/layout/renglon_campania.xml" value="0.25052083333333336" />
         <entry key="..\:/Documents/Quinto Semestre/Bloque/Android/DibujandoUnManana/app/src/main/res/layout/renglon_donacion.xml" value="0.264" />
         <entry key="..\:/Documents/Quinto Semestre/Bloque/Android/DibujandoUnManana/app/src/main/res/menu/main.xml" value="0.25052083333333336" />
+        <entry key="..\:/Documents/Quinto Semestre/Bloque/Android/DibujandoUnManana/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.26666666666666666" />
         <entry key="..\:/Users/laloa/Documents/0ITC/5.QuintoSemestre/Seguridad_informatica/Repositorios_Reto/DibujandoUnManana/app/src/main/res/layout/activity_login.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/laloa/Documents/0ITC/5.QuintoSemestre/Seguridad_informatica/Repositorios_Reto/DibujandoUnManana/app/src/main/res/layout/fragment_campanias.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/laloa/Documents/0ITC/5.QuintoSemestre/Seguridad_informatica/Repositorios_Reto/DibujandoUnManana/app/src/main/res/layout/fragment_como_sumarte.xml" value="0.13020833333333334" />
@@ -69,8 +73,7 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2907692307692308" />
         <entry key="app/src/main/res/layout/activity_main_admin.xml" value="0.29128205128205126" />
         <entry key="app/src/main/res/layout/activity_perfil.xml" value="0.3098958333333333" />
-        <entry key="app/src/main/res/layout/activity_registar.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_registrar_iniciativa.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_registar.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_settings.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/app_bar_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.1" />
@@ -80,11 +83,9 @@
         <entry key="app/src/main/res/layout/fragment_contactanos.xml" value="0.335" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.2824074074074074" />
         <entry key="app/src/main/res/layout/fragment_intro_page1.xml" value="0.38958333333333334" />
-        <entry key="app/src/main/res/layout/fragment_intro_page2.xml" value="0.3098958333333333" />
-        <entry key="app/src/main/res/layout/fragment_intro_page3.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/fragment_mis_donaciones.xml" value="0.30512820512820515" />
         <entry key="app/src/main/res/layout/fragment_que_hacemos.xml" value="0.335" />
-        <entry key="app/src/main/res/layout/fragment_quienes_somos.xml" value="0.1579466929911155" />
+        <entry key="app/src/main/res/layout/fragment_quienes_somos.xml" value="0.2824074074074074" />
         <entry key="app/src/main/res/layout/fragment_slideshow.xml" value="0.2824074074074074" />
         <entry key="app/src/main/res/layout/nav_header_main.xml" value="0.2907692307692308" />
         <entry key="app/src/main/res/layout/renglon_donacion.xml" value="0.30512820512820515" />
