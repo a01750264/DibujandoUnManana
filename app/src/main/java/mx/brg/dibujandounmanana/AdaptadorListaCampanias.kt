@@ -9,7 +9,6 @@ import android.widget.*
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.storage.FirebaseStorage
-import kotlinx.android.synthetic.main.nav_header_main.view.*
 import mx.brg.dibujandounmanana.model.CampaniaBD
 import java.io.File
 
@@ -27,8 +26,8 @@ class AdaptadorListaCampanias (var arrCampanias: ArrayList<CampaniaBD>) :
     override fun onBindViewHolder(holder: ListaCampaniasViewHolder, position: Int) {
         holder.set(arrCampanias[position])
         val vista = holder.itemView
-        val btnVerMas = vista.findViewById<Button>(R.id.btnVerMasCampania)
-        val btnDonar = vista.findViewById<Button>(R.id.btnDonarCapania)
+        val btnVerMas = vista.findViewById<Button>(R.id.btnVerMasIniciativa)
+        val btnDonar = vista.findViewById<Button>(R.id.btnDonarIniciativa)
         btnVerMas.setOnClickListener {
             println("Click en ver más de ${arrCampanias[position]}")
             listener?.clickEnRenglon(position)

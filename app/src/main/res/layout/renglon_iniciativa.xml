@@ -9,7 +9,7 @@
     app:cardUseCompatPadding="true">
 
     <LinearLayout
-        android:id="@+id/layoutRenglonCampania"
+        android:id="@+id/layoutRenglonIniciatva"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -29,7 +29,7 @@
                 android:layout_weight="0.06" />
 
             <TextView
-                android:id="@+id/tvTituloCampania"
+                android:id="@+id/tvTituloIniciativa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -49,7 +49,7 @@
             app:cardBackgroundColor="@color/borde_imagen">
 
             <ImageView
-                android:id="@+id/ivCampania"
+                android:id="@+id/ivIniciativa"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:src="@drawable/nino"
@@ -72,19 +72,6 @@
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
                 android:text="VER MÁS"
-                android:textAlignment="viewStart"
-                android:textColor="@color/secundario" />
-
-            <Button
-                android:id="@+id/btnDonarIniciativa"
-                style="?android:attr/borderlessButtonStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:backgroundTint="@color/white"
-                android:insetTop="0dp"
-                android:insetBottom="0dp"
-                android:text="DONAR"
                 android:textAlignment="viewStart"
                 android:textColor="@color/secundario" />
 

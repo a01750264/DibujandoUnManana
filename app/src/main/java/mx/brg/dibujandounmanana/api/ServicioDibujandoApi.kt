@@ -35,4 +35,7 @@ interface ServicioDibujandoApi
 
     @GET("donativo/verDonativos")
     fun verCampanias(): Call<List<CampaniaBD>>
+
+    @GET("iniciativa/verIniciativas")
+    fun verIniciativas(): Call<List<IniciativaBD>>
 }

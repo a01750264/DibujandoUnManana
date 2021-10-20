@@ -11,3 +11,12 @@ data class Iniciativa (
     @SerializedName("participantesIniciativa")
     val maxPart: Int
         ): Serializable
+
+data class IniciativaBD (
+    @SerializedName("nombre")
+    val nombre: String,
+    @SerializedName("descripcion")
+    val descripcion: String,
+    @SerializedName("maxParticipantes")
+    val maxPart: Int
+): Serializable
