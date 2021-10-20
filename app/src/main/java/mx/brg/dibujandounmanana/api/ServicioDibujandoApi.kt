@@ -40,6 +40,10 @@ interface ServicioDibujandoApi
     fun donarIniciativa(@Header("Authorization") token: String,
                         @Body body: DonanteDonacionIniciativa): Call<Map<String, String>>
 
+    @POST("propuesta/crearPropuesta")
+    fun proponerIniciativa(@Header("Authorization") token: String,
+                           @Body body: Propuesta): Call<Map<String, String>>
+
     //@Headers("Authorization: Bearer")
     @GET("donante/verDonaciones")
     fun verDonaciones(@Header("Authorization") token: String): Call<List<MiDonacion>>
@@ -52,4 +56,7 @@ interface ServicioDibujandoApi
 
     @GET("iniciativa/verIniciativas")
     fun verIniciativas(): Call<List<IniciativaBD>>
+
+    @GET("propuesta/verPropuestas")
+    fun verPropuestas(@Header("Authorization") token: String): Call<List<PropuestaBD>>
 }

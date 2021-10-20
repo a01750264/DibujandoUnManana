@@ -71,24 +71,24 @@ class LoginAdminActivity : AppCompatActivity() {
                             putString("token", response.body()?.token)
                             commit()
                         }
-                        //val mainAdminActivity = Intent(this@LoginAdminActivity, MainAdminActivity::class.java)
-                        //startActivity(mainAdminActivity)
-                        //this@LoginAdminActivity.finish()
+                        val mainAdminActivity = Intent(this@LoginAdminActivity, MainAdminActivity::class.java)
+                        startActivity(mainAdminActivity)
+                        this@LoginAdminActivity.finish()
                         println("token ${response.body()?.token}")
-                    } else if (response.code() == 401){
-                        Toast.makeText(applicationContext,"Revisa tus datos", Toast.LENGTH_SHORT).show()
-                        println(response.body())
-                    } else if (response.code() == 500){
-                        Toast.makeText(applicationContext, "Servidor caído", Toast.LENGTH_SHORT).show()
-                        println(response.body())
+                    } else {
+                        println("Error")
                     }
+                } else if (response.code() == 401){
+                    Toast.makeText(applicationContext,"Revisa tus datos", Toast.LENGTH_SHORT).show()
+                    println(response.body())
+                } else if (response.code() == 500){
+                    Toast.makeText(applicationContext, "Servidor caído", Toast.LENGTH_SHORT).show()
+                    println(response.body())
                 }
             }
             override fun onFailure(call: Call<AdminToken>, t: Throwable) {
                 println("Error: ${t.localizedMessage}")
             }
         })
-        val mainAdminActivity = Intent(this, MainAdminActivity::class.java)
-        startActivity(mainAdminActivity)
     }
 }

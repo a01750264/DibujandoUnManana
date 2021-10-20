@@ -14,6 +14,8 @@
         <entry key="..\:/Documents/Quinto Semestre/Bloque/Android/DibujandoUnManana/app/src/main/res/layout/activity_main_admin.xml" value="0.25052083333333336" />
         <entry key="..\:/Documents/Quinto Semestre/Bloque/Android/DibujandoUnManana/app/src/main/res/layout/activity_perfil.xml" value="0.25052083333333336" />
         <entry key="..\:/Documents/Quinto Semestre/Bloque/Android/DibujandoUnManana/app/src/main/res/layout/activity_registar.xml" value="0.2" />
+        <entry key="..\:/Documents/Quinto Semestre/Bloque/Android/DibujandoUnManana/app/src/main/res/layout/activity_registrar_iniciativa.xml" value="0.25052083333333336" />
+        <entry key="..\:/Documents/Quinto Semestre/Bloque/Android/DibujandoUnManana/app/src/main/res/layout/activity_ver_propuestas.xml" value="0.25052083333333336" />
         <entry key="..\:/Documents/Quinto Semestre/Bloque/Android/DibujandoUnManana/app/src/main/res/layout/app_bar_main.xml" value="0.25052083333333336" />
         <entry key="..\:/Documents/Quinto Semestre/Bloque/Android/DibujandoUnManana/app/src/main/res/layout/content_main.xml" value="0.25052083333333336" />
         <entry key="..\:/Documents/Quinto Semestre/Bloque/Android/DibujandoUnManana/app/src/main/res/layout/fragment_campanias.xml" value="0.25052083333333336" />
@@ -23,6 +25,7 @@
         <entry key="..\:/Documents/Quinto Semestre/Bloque/Android/DibujandoUnManana/app/src/main/res/layout/fragment_lista_campanias_admin.xml" value="0.25052083333333336" />
         <entry key="..\:/Documents/Quinto Semestre/Bloque/Android/DibujandoUnManana/app/src/main/res/layout/fragment_lista_iniciativas.xml" value="0.25052083333333336" />
         <entry key="..\:/Documents/Quinto Semestre/Bloque/Android/DibujandoUnManana/app/src/main/res/layout/fragment_lista_iniciativas_admin.xml" value="0.25052083333333336" />
+        <entry key="..\:/Documents/Quinto Semestre/Bloque/Android/DibujandoUnManana/app/src/main/res/layout/fragment_lista_propuestas.xml" value="0.23645833333333333" />
         <entry key="..\:/Documents/Quinto Semestre/Bloque/Android/DibujandoUnManana/app/src/main/res/layout/fragment_mis_donaciones.xml" value="0.25052083333333336" />
         <entry key="..\:/Documents/Quinto Semestre/Bloque/Android/DibujandoUnManana/app/src/main/res/layout/fragment_quienes_somos.xml" value="0.25052083333333336" />
         <entry key="..\:/Documents/Quinto Semestre/Bloque/Android/DibujandoUnManana/app/src/main/res/layout/nav_header_main.xml" value="0.25052083333333336" />
@@ -31,6 +34,7 @@
         <entry key="..\:/Documents/Quinto Semestre/Bloque/Android/DibujandoUnManana/app/src/main/res/layout/renglon_donacion.xml" value="0.264" />
         <entry key="..\:/Documents/Quinto Semestre/Bloque/Android/DibujandoUnManana/app/src/main/res/layout/renglon_iniciativa.xml" value="0.25052083333333336" />
         <entry key="..\:/Documents/Quinto Semestre/Bloque/Android/DibujandoUnManana/app/src/main/res/layout/renglon_iniciativa_admin.xml" value="0.25052083333333336" />
+        <entry key="..\:/Documents/Quinto Semestre/Bloque/Android/DibujandoUnManana/app/src/main/res/layout/renglon_propuesta.xml" value="0.25052083333333336" />
         <entry key="..\:/Documents/Quinto Semestre/Bloque/Android/DibujandoUnManana/app/src/main/res/menu/main.xml" value="0.25052083333333336" />
         <entry key="..\:/Documents/Quinto Semestre/Bloque/Android/DibujandoUnManana/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.26666666666666666" />
         <entry key="..\:/Users/laloa/Documents/0ITC/5.QuintoSemestre/Seguridad_informatica/Repositorios_Reto/DibujandoUnManana/app/src/main/res/layout/activity_login.xml" value="0.13020833333333334" />

@@ -58,5 +58,13 @@
             android:text="@string/editar_iniciativas_admin_main"
             app:icon="@drawable/ic_edit"/>
 
+        <Button
+            android:id="@+id/btnVerPropuestas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/secundario"
+            android:text="VER PROPUESTAS" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

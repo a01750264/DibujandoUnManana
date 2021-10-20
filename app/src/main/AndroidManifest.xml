@@ -15,6 +15,9 @@
         android:theme="@style/Theme.DibujandoUnManana"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".VerPropuestasActivity"
+            android:exported="true" />
+        <activity
             android:name=".IniciativaSeleccionada"
             android:exported="true" />
         <activity

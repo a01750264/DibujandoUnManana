@@ -96,7 +96,7 @@
     <string name="title_activity_admin_main">Inicio</string>
     <string name="bienvenido_admin_main">¡Bienvenido!</string>
     <string name="instrucciones_admin_main">Cree o elimine alguna de las campañas o
-        iniciativas de Dibujando Un Mañana</string>
+        iniciativas de Dibujando Un Mañana, o revise las propuestas de los usuarios</string>
     <string name="editar_campañas_admin_main">Editar Campañas</string>
     <string name="editar_iniciativas_admin_main">Editar Iniciativas</string>
 

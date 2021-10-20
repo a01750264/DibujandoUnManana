@@ -97,17 +97,19 @@ class LoginActivity : AppCompatActivity() {
                             putString("token", response.body()?.token)
                             commit()
                         }
-                        //val mainActivity = Intent(this@LoginActivity, MainActivity::class.java)
-                        //startActivity(mainActivity)
-                        //this@LoginActivity.finish()
+                        val mainActivity = Intent(this@LoginActivity, MainActivity::class.java)
+                        startActivity(mainActivity)
+                        this@LoginActivity.finish()
                         println("token ${response.body()?.token}")
-                    } else if(response.code() == 401){
-                        Toast.makeText(applicationContext,"Revisa tus datos", Toast.LENGTH_SHORT).show()
-                        println(response.body())
-                    } else if (response.code() == 500){
-                        Toast.makeText(applicationContext, "Servidor caído", Toast.LENGTH_SHORT).show()
-                        println(response.body())
+                    } else {
+                        println("Error")
                     }
+                }  else if(response.code() == 401){
+                    Toast.makeText(applicationContext,"Revisa tus datos", Toast.LENGTH_SHORT).show()
+                    println(response.body())
+                } else if (response.code() == 500){
+                    Toast.makeText(applicationContext, "Servidor caído", Toast.LENGTH_SHORT).show()
+                    println(response.body())
                 }
             }
 
@@ -115,8 +117,5 @@ class LoginActivity : AppCompatActivity() {
                 println("Error: ${t.localizedMessage}")
             }
         })
-        val mainActivity = Intent(this, MainActivity::class.java)
-        startActivity(mainActivity)
-        this.finish()
     }
 }

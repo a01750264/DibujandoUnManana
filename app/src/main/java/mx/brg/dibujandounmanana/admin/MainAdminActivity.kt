@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import mx.brg.dibujandounmanana.R
+import mx.brg.dibujandounmanana.VerPropuestasActivity
 import mx.brg.dibujandounmanana.databinding.ActivityEditarCampaniasBinding
 import mx.brg.dibujandounmanana.databinding.ActivityEditarIniciativasBinding
 import mx.brg.dibujandounmanana.databinding.ActivityMainAdminBinding
@@ -26,6 +27,11 @@ class MainAdminActivity : AppCompatActivity() {
         binding.btnEditarIniciativas.setOnClickListener {
             val editIniAdminActivity = Intent(this, EditarIniciativasActivity::class.java)
             startActivity(editIniAdminActivity)
+        }
+
+        binding.btnVerPropuestas.setOnClickListener {
+            val verPropuestasActivity = Intent(this, VerPropuestasActivity::class.java)
+            startActivity(verPropuestasActivity)
         }
     }
 }
