@@ -1,6 +1,7 @@
 package mx.brg.dibujandounmanana
 
 import android.app.ProgressDialog
+import android.content.Intent
 import android.graphics.BitmapFactory
 import android.view.LayoutInflater
 import android.view.View
@@ -31,6 +32,8 @@ class AdaptadorListaIniciativas(var arrIniciativas: ArrayList<IniciativaBD>) :
         btnVerMas.setOnClickListener {
             println("Click en ver más de ${arrIniciativas[position]}")
             listener?.clickEnRenglon(position)
+            val intent = Intent(holder.itemView.context, IniciativaSeleccionada::class.java)
+            holder.itemView.context.startActivity(intent)
         }
 
     }

@@ -29,6 +29,9 @@ interface ServicioDibujandoApi
     @POST("donativo/verDonativo")
     fun verCampania(@Body body: CampaniaId): Call<CampaniaBD>
 
+    @POST("iniciativa/verIniciativa")
+    fun verIniciativa(@Body body: IniciativaId): Call<IniciativaBD>
+
     @POST("donante/donarDonativo")
     fun donarCampania(@Header("Authorization") token: String,
                       @Body body: DonanteDonacionCampania): Call<Map<String, String>>

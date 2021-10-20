@@ -18,5 +18,12 @@ data class IniciativaBD (
     @SerializedName("descripcion")
     val descripcion: String,
     @SerializedName("maxParticipantes")
-    val maxPart: Int
+    val maxPart: Int,
+    @SerializedName("id")
+    val id: Int
 ): Serializable
+
+data class IniciativaId (
+    @SerializedName("iniciativaId")
+    val id: Int
+        ): Serializable

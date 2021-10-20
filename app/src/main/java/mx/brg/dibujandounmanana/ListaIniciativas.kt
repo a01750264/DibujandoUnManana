@@ -1,11 +1,13 @@
 package mx.brg.dibujandounmanana
 
+import android.content.Context
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.edit
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import mx.brg.dibujandounmanana.databinding.FragmentListaIniciativasBinding
@@ -58,7 +60,12 @@ class ListaIniciativas : Fragment(), RenglonListenerIniciativa {
 
     override fun clickEnRenglon(position: Int)
     {
-        val campania = adaptadorListainiciativas.arrIniciativas[position]
-        println("Cambiar a pantalla ${campania.nombre}")
+        val iniciativa = adaptadorListainiciativas.arrIniciativas[position]
+        println("Cambiar a pantalla ${iniciativa.nombre}")
+        this.requireContext().getSharedPreferences("iniciativaSeleccionada", Context.MODE_PRIVATE).edit {
+            putInt("id",iniciativa.id)
+            commit()
+        }
+
     }
 }

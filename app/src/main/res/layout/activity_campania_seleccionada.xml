@@ -55,7 +55,8 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/libre_baskerville_bold"
                 android:text="TextView"
-                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textSize="18sp" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
