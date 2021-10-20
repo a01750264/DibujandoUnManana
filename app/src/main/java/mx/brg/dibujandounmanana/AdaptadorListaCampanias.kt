@@ -26,8 +26,8 @@ class AdaptadorListaCampanias (var arrCampanias: ArrayList<CampaniaBD>) :
     override fun onBindViewHolder(holder: ListaCampaniasViewHolder, position: Int) {
         holder.set(arrCampanias[position])
         val vista = holder.itemView
-        val btnVerMas = vista.findViewById<Button>(R.id.btnVerMasIniciativa)
-        val btnDonar = vista.findViewById<Button>(R.id.btnDonarIniciativa)
+        val btnVerMas = vista.findViewById<Button>(R.id.btnVerMasCampania)
+        val btnDonar = vista.findViewById<Button>(R.id.btnDonarCampania)
         btnVerMas.setOnClickListener {
             println("Click en ver más de ${arrCampanias[position]}")
             listener?.clickEnRenglon(position)

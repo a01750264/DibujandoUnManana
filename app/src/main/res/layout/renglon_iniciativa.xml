@@ -69,11 +69,11 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:backgroundTint="@color/white"
+                android:text="Ver más"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
-                android:text="VER MÁS"
-                android:textAlignment="viewStart"
-                android:textColor="@color/secundario" />
+                android:textColor="@color/secundario"
+                android:textAlignment="viewStart"/>
 
             <Space
                 android:layout_width="100dp"

@@ -8,8 +8,9 @@
     app:cardElevation="5dp"
     app:cardUseCompatPadding="true">
 
+
     <LinearLayout
-        android:id="@+id/layoutRenglonCampania"
+        android:id="@+id/layoutRenglonCampaniaAdmin"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -29,7 +30,7 @@
                 android:layout_weight="0.06" />
 
             <TextView
-                android:id="@+id/tvTituloCampania"
+                android:id="@+id/tvTituloCampaniaAdmin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -49,7 +50,7 @@
             app:cardBackgroundColor="@color/borde_imagen">
 
             <ImageView
-                android:id="@+id/ivCampania"
+                android:id="@+id/ivCampaniaAdmin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:src="@drawable/fdum_logo_completo"
@@ -63,7 +64,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btnVerMasCampania"
+                android:id="@+id/btnBorrarCampania"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -71,22 +72,9 @@
                 android:backgroundTint="@color/white"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
-                android:text="VER MÁS"
+                android:text="BORRAR"
                 android:textAlignment="viewStart"
-                android:textColor="@color/secundario" />
-
-            <Button
-                android:id="@+id/btnDonarCampania"
-                style="?android:attr/borderlessButtonStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:backgroundTint="@color/white"
-                android:insetTop="0dp"
-                android:insetBottom="0dp"
-                android:text="DONAR"
-                android:textAlignment="viewStart"
-                android:textColor="@color/secundario" />
+                android:textColor="@color/red_500"/>
 
             <Space
                 android:layout_width="100dp"

@@ -32,6 +32,7 @@ class AdaptadorListaIniciativas(var arrIniciativas: ArrayList<IniciativaBD>) :
             println("Click en ver más de ${arrIniciativas[position]}")
             listener?.clickEnRenglon(position)
         }
+
     }
 
     override fun getItemCount(): Int {
