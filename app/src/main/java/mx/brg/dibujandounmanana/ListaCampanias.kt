@@ -1,11 +1,13 @@
 package mx.brg.dibujandounmanana
 
+import android.content.Context
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.edit
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import mx.brg.dibujandounmanana.databinding.FragmentListaCampaniasBinding
@@ -56,10 +58,23 @@ class ListaCampanias : Fragment(), RenglonListenerCampanias {
         adaptadorListaCampanias.listener = this
     }
 
-    override fun clickEnRenglon(position: Int)
+    override fun clickEnVerMas(position: Int)
     {
         val campania = adaptadorListaCampanias.arrCampanias[position]
         println("Cambiar a pantalla ${campania.nombre}")
+        this.requireContext().getSharedPreferences("campaniaSeleccionada", Context.MODE_PRIVATE).edit {
+            putInt("id",campania.id)
+            commit()
+        }
+    }
+
+    override fun clickEnDonar(position: Int) {
+        val campania = adaptadorListaCampanias.arrCampanias[position]
+        println("Cambiar a Donar con referencia ${campania.nombre}")
+        this.requireContext().getSharedPreferences("campaniaSeleccionada", Context.MODE_PRIVATE).edit {
+            putInt("id",campania.id)
+            commit()
+        }
     }
 
 }

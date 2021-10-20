@@ -1,5 +1,6 @@
 package mx.brg.dibujandounmanana
 
 interface RenglonListenerCampanias {
-    fun clickEnRenglon(position: Int)
+    fun clickEnVerMas(position: Int)
+    fun clickEnDonar(position: Int)
 }

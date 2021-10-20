@@ -15,4 +15,11 @@ data class CampaniaBD (
     val nombre: String,
     @SerializedName("descripcion")
     val descripcion: String,
+    @SerializedName("id")
+    val id: Int
 ): Serializable
+
+data class CampaniaId (
+    @SerializedName("donativoId")
+    val id: Int
+        ): Serializable

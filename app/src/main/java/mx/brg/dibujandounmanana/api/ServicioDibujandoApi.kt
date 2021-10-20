@@ -26,6 +26,17 @@ interface ServicioDibujandoApi
     fun crearCampania(@Header("Authorization") token: String,
                       @Body body: Campania): Call<Map<String, String>>
 
+    @POST("donativo/verDonativo")
+    fun verCampania(@Body body: CampaniaId): Call<CampaniaBD>
+
+    @POST("donante/donarDonativo")
+    fun donarCampania(@Header("Authorization") token: String,
+                      @Body body: DonanteDonacionCampania): Call<Map<String, String>>
+
+    @POST("donante/donar")
+    fun donarIniciativa(@Header("Authorization") token: String,
+                        @Body body: DonanteDonacionIniciativa): Call<Map<String, String>>
+
     //@Headers("Authorization: Bearer")
     @GET("donante/verDonaciones")
     fun verDonaciones(@Header("Authorization") token: String): Call<List<MiDonacion>>

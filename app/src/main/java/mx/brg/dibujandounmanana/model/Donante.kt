@@ -25,3 +25,17 @@ data class DonanteInfo(
     @SerializedName("fecha_registro")
     val fecha: String
 ): Serializable
+
+data class DonanteDonacionCampania(
+    @SerializedName("donacionDonativo")
+    val donativoId: Int,
+    @SerializedName("donacionCantidad")
+    val cantidad: Float
+): Serializable
+
+data class DonanteDonacionIniciativa(
+    @SerializedName("donacionIniciativa")
+    val iniciativaId: Int,
+    @SerializedName("donacionCantidad")
+    val cantidad: Float
+): Serializable

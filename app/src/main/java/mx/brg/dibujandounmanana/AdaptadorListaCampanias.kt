@@ -1,6 +1,8 @@
 package mx.brg.dibujandounmanana
 
 import android.app.ProgressDialog
+import android.content.Context
+import android.content.Intent
 import android.graphics.BitmapFactory
 import android.view.LayoutInflater
 import android.view.View
@@ -9,8 +11,11 @@ import android.widget.*
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.storage.FirebaseStorage
+import kotlinx.coroutines.withContext
 import mx.brg.dibujandounmanana.model.CampaniaBD
+import mx.brg.dibujandounmanana.ui.donacion.Donacion
 import java.io.File
+import kotlin.coroutines.coroutineContext
 
 
 class AdaptadorListaCampanias (var arrCampanias: ArrayList<CampaniaBD>) :
@@ -30,12 +35,16 @@ class AdaptadorListaCampanias (var arrCampanias: ArrayList<CampaniaBD>) :
         val btnDonar = vista.findViewById<Button>(R.id.btnDonarCampania)
         btnVerMas.setOnClickListener {
             println("Click en ver más de ${arrCampanias[position]}")
-            listener?.clickEnRenglon(position)
+            listener?.clickEnVerMas(position)
+            val intent = Intent(holder.itemView.context, CampaniaSeleccionada::class.java)
+            holder.itemView.context.startActivity(intent)
         }
 
         btnDonar.setOnClickListener {
             println("Click en donar de ${arrCampanias[position]}")
-            listener?.clickEnRenglon(position)
+            listener?.clickEnDonar(position)
+            val intent = Intent(holder.itemView.context, Donacion::class.java)
+            holder.itemView.context.startActivity(intent)
         }
 
     }
