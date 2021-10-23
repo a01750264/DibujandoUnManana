@@ -7,13 +7,16 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
+
+    <!--
+        Usuario
+    -->
+
     <!-- Inicio -->
     <string name="menu_home">Inicio</string>
     <string name="menu_home_descripcion">¡Somos Fundación Dibujando Un Mañana! Gracias por descargar nuestra app. Aquí puedes conocer un poco más acerca de nosotros y lo que hacemos. Tú puedes hacer la diferencia, ya sea donando en alguna de nuestras campañas o sumándote en alguna de nuestras iniciativas. Si tienes alguna pregunta, no dudes en contactarnos o contándanos alguna idea para una iniciativa. \n</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
-    <string name="menu_quienessomos">¿Quiénes Somos?</string>
-    <string name="menu_quehacemos">¿Qué Hacemos?</string>
+
+    <!-- Ver Campañas -->
     <string name="menu_campanias">Ver Campañas</string>
 
     <!-- ¿Como Sumarte?-->
@@ -21,11 +24,11 @@
     <string name="menu_comosumarte">¿Cómo Sumarte?</string>
     <string name="titulo_registrar_iniciativa">Proponer una inciativa</string>
 
+    <!-- Contactanos -->
     <string name="menu_contactanos">Contáctanos</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <!-- Quienes Somos -->
+    <string name="menu_quienessomos">¿Quiénes Somos?</string>
     <string name="quienes_somos_1">Nos dedicamos a impulsar el desarrollo social de niñas, niños y
         adolescentes en situación de vulnerabilidad en México y Centro América con un modelo de
         inversión social que entrelaza la voluntad de ayudar de diversos actores y la transforma
@@ -41,6 +44,8 @@
         convencidos de que        la ruta es generar alianzas para crear condiciones idóneas que
         favorezcan la vida digna de todas las personas en nuestro país y la región. \n </string>
 
+    <!-- ¿Qué hacemos? -->
+    <string name="menu_quehacemos">¿Qué Hacemos?</string>
     <string name="quehacemos_modelo_fdum">Nuestro Modelo está inspirado en una visión sistémica
         y de carácter internacional que nos permite dimensionar en un mismo panorama a los
         diferentes actores sociales que se deben vincular a través de alianzas para lograr el
@@ -65,14 +70,10 @@
         integral a las niñas, niños y adolescentes, basada en un Enfoque de Derechos Humanos y
         Enfoque de Gestión para Resultados de Desarrollo. \n</string>
 
+    <!-- Donativos -->
     <string name="title_activity_donar">Donativos</string>
     <string name="descripcion_donativo_tarjeta">Haz tu donativo/pago único de forma segura utilizando tu tarjeta de crédito o débito.\n</string>
     <string name="descripcion_donativo_deposito">Puede hacer las transferencias a través de su aplicación de Banca Electrónica o Aplicación Móvil. Asimismo, los depósitos los puede realizar en ventanillas de cualquier sucursal BBVA o en tiendas de conveniencia.\n</string>
-    <string-array name="referencia_donativo">
-        <item>Donativo Único</item>
-    </string-array>
-
-    <string name="title_activity_perfil">Perfil</string>
 
     <!-- Intro -->
     <string name="intro_1">¡Somos Fundación Dibujando un Mañana!</string>
@@ -88,8 +89,13 @@
     <string name="intro_3_text3">Niñas, niños y adolescentes atendidos por los proyectos.</string>
     <string name="intro_3_button">Empecemos</string>
 
-    <!-- Perfil xd -->
+    <!-- Perfil -->
+    <string name="title_activity_perfil">Perfil</string>
     <string name="donativos">Mis Donativos</string>
+
+    <!--
+        Administrador
+    -->
 
 
     <!-- Main Admin -->
@@ -111,4 +117,5 @@
 
     <!-- Crear Iniciativas -->
     <string name="title_activity_crear_iniciativas">Crear Iniciativa</string>
+
 </resources>

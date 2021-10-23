@@ -11,6 +11,12 @@ import android.view.ViewGroup
 import mx.brg.dibujandounmanana.R
 import mx.brg.dibujandounmanana.databinding.FragmentContactanosBinding
 
+/*
+    En esta Fragment se le da funciones a los botones de la ventana de Contáctanos. Cada respectivo
+    botón se le da un Intent donde hace su respectiva actividad, ya sea mail, teléfono, o alguna red
+    social.
+ */
+
 class Contactanos : Fragment() {
 
     private lateinit var binding: FragmentContactanosBinding
@@ -32,6 +38,8 @@ class Contactanos : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        // Oficinas México
         binding.btnMailMx.setOnClickListener {
             val mailIntent = Intent(Intent.ACTION_SEND)
             mailIntent.data = Uri.parse("mailto:")
@@ -39,12 +47,13 @@ class Contactanos : Fragment() {
             mailIntent.putExtra(Intent.EXTRA_EMAIL, arrayOf("contacto@dibujando.org.mx"))
             startActivity(mailIntent)
         }
-
         binding.btnTelMx.setOnClickListener {
             val dialIntent = Intent(Intent.ACTION_DIAL)
             dialIntent.data = Uri.parse("tel:" + "+525521225286")
             startActivity(dialIntent)
         }
+
+        // Oficinas Monterrey
         binding.btnMailMty.setOnClickListener {
             val mailIntent = Intent(Intent.ACTION_SEND)
             mailIntent.data = Uri.parse("mailto:")
@@ -57,6 +66,8 @@ class Contactanos : Fragment() {
             dialIntent.data = Uri.parse("tel:" + "+528144448643")
             startActivity(dialIntent)
         }
+
+        // Redes Sociales
         binding.btnFacebook.setOnClickListener {
             val urlIntent = Intent(Intent.ACTION_VIEW)
             urlIntent.data = Uri.parse("https://www.facebook.com/DibujandoUnManana/")

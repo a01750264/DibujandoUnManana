@@ -13,6 +13,10 @@ import mx.brg.dibujandounmanana.databinding.FragmentHomeBinding
 import android.content.Intent
 import android.net.Uri
 
+/*
+    En este fragment se le da función al video que aparece en la ventana de Inicio. Al presionarlo
+    se le llevará a Youtube con el respectivo video
+ */
 
 class HomeFragment : Fragment() {
 
