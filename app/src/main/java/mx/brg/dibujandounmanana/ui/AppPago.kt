@@ -9,6 +9,10 @@ import com.paypal.checkout.createorder.CurrencyCode
 import com.paypal.checkout.createorder.UserAction
 import mx.brg.dibujandounmanana.BuildConfig
 
+/*
+    En esta clase se encuentra la información que recibe PayPal para saber acerca del tipo de
+    transacción.
+ */
 class AppPago : Application() {
     private val CLIENT_ID: String = "AQPTxSXoOQrO3ec69tWA0h5TJkngyQQUQIIKDTs1_Tvy_9PgZXP9TV82yPbmar8eCmEv5lyFHS-C5r5H"
 
