@@ -1,6 +1,5 @@
-package mx.brg.dibujandounmanana
+package mx.brg.dibujandounmanana.admin
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater

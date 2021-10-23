@@ -21,7 +21,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView4"
-        android:name="mx.brg.dibujandounmanana.ListaCampaniasAdmin"
+        android:name="mx.brg.dibujandounmanana.admin.ListaCampaniasAdmin"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"

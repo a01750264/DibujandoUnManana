@@ -1,24 +1,20 @@
-package mx.brg.dibujandounmanana
+package mx.brg.dibujandounmanana.ui.perfil
 
 import android.app.DatePickerDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.DatePicker
 import android.widget.EditText
 import android.widget.Toast
 import mx.brg.dibujandounmanana.R
 import mx.brg.dibujandounmanana.api.ServicioDibujandoApi
-import mx.brg.dibujandounmanana.databinding.ActivityMainBinding
 import mx.brg.dibujandounmanana.databinding.ActivityRegistarBinding
 import mx.brg.dibujandounmanana.model.DonanteSignUp
-import mx.brg.dibujandounmanana.ui.LoginActivity
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import java.text.ParseException
 import java.text.SimpleDateFormat
 import java.util.*
 

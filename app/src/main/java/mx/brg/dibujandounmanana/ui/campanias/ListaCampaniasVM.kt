@@ -1,4 +1,4 @@
-package mx.brg.dibujandounmanana
+package mx.brg.dibujandounmanana.ui.campanias
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

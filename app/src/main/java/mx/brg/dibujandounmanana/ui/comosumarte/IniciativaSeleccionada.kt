@@ -1,4 +1,4 @@
-package mx.brg.dibujandounmanana
+package mx.brg.dibujandounmanana.ui.comosumarte
 
 import android.app.ProgressDialog
 import android.content.Context
@@ -8,9 +8,9 @@ import android.os.Bundle
 import android.widget.Toast
 import com.google.firebase.storage.FirebaseStorage
 import mx.brg.dibujandounmanana.api.ServicioDibujandoApi
-import mx.brg.dibujandounmanana.databinding.ActivityCampaniaSeleccionadaBinding
-import mx.brg.dibujandounmanana.model.CampaniaBD
-import mx.brg.dibujandounmanana.model.CampaniaId
+import mx.brg.dibujandounmanana.databinding.ActivityIniciativaSeleccionadaBinding
+import mx.brg.dibujandounmanana.model.IniciativaBD
+import mx.brg.dibujandounmanana.model.IniciativaId
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -19,12 +19,13 @@ import retrofit2.converter.gson.GsonConverterFactory
 import java.io.File
 
 /*
-Esta actividad muestra la información completa de la Campania a la que se hizo click en Ver Más
+Esta actividad muestra la información completa de la Campania a la que se hizo click en Ver Más,
+y también está al pendiente de cuando se haga click en el botón de Participar
  */
 
-class CampaniaSeleccionada : AppCompatActivity() {
+class IniciativaSeleccionada : AppCompatActivity() {
 
-    private lateinit var binding: ActivityCampaniaSeleccionadaBinding
+    private lateinit var binding: ActivityIniciativaSeleccionadaBinding
 
     private val retrofit by lazy {
         Retrofit.Builder()
@@ -39,7 +40,7 @@ class CampaniaSeleccionada : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityCampaniaSeleccionadaBinding.inflate(layoutInflater)
+        binding = ActivityIniciativaSeleccionadaBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val progressDialog = ProgressDialog(this)
@@ -47,18 +48,18 @@ class CampaniaSeleccionada : AppCompatActivity() {
         progressDialog.setCancelable(false)
         progressDialog.show()
 
-        val preferencias = this.getSharedPreferences("campaniaSeleccionada", Context.MODE_PRIVATE)
+        val preferencias = this.getSharedPreferences("iniciativaSeleccionada", Context.MODE_PRIVATE)
         val id = preferencias.getInt("id", -1)
-        val call = servicioDibujandoApi.verCampania(CampaniaId(id))
-        call.enqueue(object: Callback<CampaniaBD> {
-            override fun onResponse(call: Call<CampaniaBD>, response: Response<CampaniaBD>) {
+        val call = servicioDibujandoApi.verIniciativa(IniciativaId(id))
+        call.enqueue(object: Callback<IniciativaBD> {
+            override fun onResponse(call: Call<IniciativaBD>, response: Response<IniciativaBD>) {
                 if (response.isSuccessful)
                 {
                     if (response.code() == 200)
                     {
-                        binding.tvTituloCampaniaSeleccionada.setText(response.body()?.nombre)
-                        binding.tvDescripcionCampaniaSeleccionada.setText(response.body()?.descripcion)
-                        val storageRef = FirebaseStorage.getInstance().reference.child("campanias/${response.body()?.nombre}")
+                        binding.tvTituloIniciativaSeleccionada.setText(response.body()?.nombre)
+                        binding.tvDescripcionIniciativaSeleccionada.setText(response.body()?.descripcion)
+                        val storageRef = FirebaseStorage.getInstance().reference.child("iniciativas/${response.body()?.nombre}${response.body()?.maxPart}")
                         val file = File.createTempFile("tempImage", "jpg")
                         storageRef.getFile(file).addOnSuccessListener {
 
@@ -68,7 +69,7 @@ class CampaniaSeleccionada : AppCompatActivity() {
                             }
 
                             val bitmap = BitmapFactory.decodeFile(file.absolutePath)
-                            binding.ivCampaniaSeleccionada.setImageBitmap(bitmap)
+                            binding.ivIniciativaSeleccionada.setImageBitmap(bitmap)
 
                         }.addOnFailureListener{
                             if (progressDialog.isShowing)
@@ -81,7 +82,7 @@ class CampaniaSeleccionada : AppCompatActivity() {
                     }
                 } else if (response.code() == 404)
                 {
-                    Toast.makeText(applicationContext, "No existen Campañas", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(applicationContext, "No existen Iniciativas", Toast.LENGTH_SHORT).show()
                 } else if (response.code() == 500)
                 {
                     Toast.makeText(applicationContext, "Servidor caído", Toast.LENGTH_SHORT).show()
@@ -89,9 +90,18 @@ class CampaniaSeleccionada : AppCompatActivity() {
                     println(response.errorBody())
                 }
             }
-            override fun onFailure(call: Call<CampaniaBD>, t: Throwable) {
+
+            override fun onFailure(call: Call<IniciativaBD>, t: Throwable) {
                 println("Error: ${t.localizedMessage}")
             }
         })
+
+        configurarObservadores()
+    }
+
+    private fun configurarObservadores() {
+        binding.btnParticiparIniciativa.setOnClickListener {
+            Toast.makeText(this,"Bienvenido", Toast.LENGTH_SHORT).show()
+        }
     }
 }

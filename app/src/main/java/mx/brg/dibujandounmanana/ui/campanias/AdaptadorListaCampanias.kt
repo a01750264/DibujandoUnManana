@@ -1,7 +1,6 @@
-package mx.brg.dibujandounmanana
+package mx.brg.dibujandounmanana.ui.campanias
 
 import android.app.ProgressDialog
-import android.content.Context
 import android.content.Intent
 import android.graphics.BitmapFactory
 import android.view.LayoutInflater
@@ -11,11 +10,10 @@ import android.widget.*
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.storage.FirebaseStorage
-import kotlinx.coroutines.withContext
+import mx.brg.dibujandounmanana.R
 import mx.brg.dibujandounmanana.model.CampaniaBD
 import mx.brg.dibujandounmanana.ui.donacion.Donacion
 import java.io.File
-import kotlin.coroutines.coroutineContext
 
 /*
 Este adaptador se encarga de dar valor al recycler view que contiene las Campanias dadas de alta

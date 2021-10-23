@@ -1,4 +1,4 @@
-package mx.brg.dibujandounmanana
+package mx.brg.dibujandounmanana.admin
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

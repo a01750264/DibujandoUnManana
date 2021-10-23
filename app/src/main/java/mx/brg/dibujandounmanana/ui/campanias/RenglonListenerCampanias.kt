@@ -1,4 +1,4 @@
-package mx.brg.dibujandounmanana
+package mx.brg.dibujandounmanana.ui.campanias
 
 /*
 Esta interface permite saber en qué Campania se hizo click en cualquiera de los dos botones

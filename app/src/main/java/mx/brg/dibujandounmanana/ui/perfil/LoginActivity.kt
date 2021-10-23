@@ -1,15 +1,12 @@
-package mx.brg.dibujandounmanana.ui
+package mx.brg.dibujandounmanana.ui.perfil
 
 import android.content.Context
 import android.content.Intent
-import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.core.content.edit
-import com.google.gson.Gson
 import mx.brg.dibujandounmanana.MainActivity
-import mx.brg.dibujandounmanana.RegistarActivity
 import mx.brg.dibujandounmanana.admin.LoginAdminActivity
 import mx.brg.dibujandounmanana.api.ServicioDibujandoApi
 import mx.brg.dibujandounmanana.databinding.ActivityLoginBinding

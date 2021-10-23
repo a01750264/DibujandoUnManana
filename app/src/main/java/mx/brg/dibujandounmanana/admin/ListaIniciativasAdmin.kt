@@ -1,6 +1,5 @@
-package mx.brg.dibujandounmanana
+package mx.brg.dibujandounmanana.admin
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -8,8 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
+import mx.brg.dibujandounmanana.ui.comosumarte.ListaIniciativas
 import mx.brg.dibujandounmanana.databinding.FragmentListaIniciativasAdminBinding
-import mx.brg.dibujandounmanana.databinding.FragmentListaIniciativasBinding
 
 /*
 Este fragmento se encarga de mostrar al administrador las Iniciativas dadas de alta en la base

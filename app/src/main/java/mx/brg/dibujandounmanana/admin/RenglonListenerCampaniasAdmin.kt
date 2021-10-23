@@ -1,4 +1,4 @@
-package mx.brg.dibujandounmanana
+package mx.brg.dibujandounmanana.admin
 
 interface RenglonListenerCampaniasAdmin {
     fun clickEnRenglon(position: Int)

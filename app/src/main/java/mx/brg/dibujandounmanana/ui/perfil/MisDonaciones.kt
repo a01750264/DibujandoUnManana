@@ -1,8 +1,6 @@
-package mx.brg.dibujandounmanana
+package mx.brg.dibujandounmanana.ui.perfil
 
-import android.app.Activity
 import android.content.Context
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater

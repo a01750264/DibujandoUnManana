@@ -1,4 +1,4 @@
-package mx.brg.dibujandounmanana
+package mx.brg.dibujandounmanana.ui.perfil
 
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity

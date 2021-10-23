@@ -15,6 +15,7 @@ import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.app_bar_main.*
 import mx.brg.dibujandounmanana.databinding.ActivityMainBinding
 import mx.brg.dibujandounmanana.ui.donacion.Donacion
+import mx.brg.dibujandounmanana.ui.perfil.PerfilActivity
 
 /*
     En esta Actividad se configura la navegación de la app para usuario. Incluyendo el menú de

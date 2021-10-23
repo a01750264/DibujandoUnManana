@@ -1,7 +1,6 @@
-package mx.brg.dibujandounmanana
+package mx.brg.dibujandounmanana.admin
 
 import android.app.ProgressDialog
-import android.content.Intent
 import android.graphics.BitmapFactory
 import android.view.LayoutInflater
 import android.view.View
@@ -12,34 +11,33 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.storage.FirebaseStorage
+import mx.brg.dibujandounmanana.R
 import mx.brg.dibujandounmanana.model.IniciativaBD
 import java.io.File
 
 /*
 Este adaptador se encarga de dar valor al recycler view que contiene las Iniciativas dadas de alta
-en la base de datos para mostrarlas al donante, también trae la imagen de éstas a través de
+en la base de datos para mostrarlas al administrador, también trae la imagen de éstas a través de
 Firebase Storage
  */
 
-class AdaptadorListaIniciativas(var arrIniciativas: ArrayList<IniciativaBD>) :
-    RecyclerView.Adapter<AdaptadorListaIniciativas.ListaIniciativasViewHolder>()
+class AdaptadorListaIniciativasAdmin(var arrIniciativas: ArrayList<IniciativaBD>) :
+    RecyclerView.Adapter<AdaptadorListaIniciativasAdmin.ListaIniciativasAdminViewHolder>()
 {
-    var listener: RenglonListenerIniciativa? = null
+    var listener: RenglonListenerIniciativaAdmin? = null
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListaIniciativasViewHolder {
-        val vista = LayoutInflater.from(parent.context).inflate(R.layout.renglon_iniciativa, parent, false)
-        return AdaptadorListaIniciativas.ListaIniciativasViewHolder(vista)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListaIniciativasAdminViewHolder {
+        val vista = LayoutInflater.from(parent.context).inflate(R.layout.renglon_iniciativa_admin, parent, false)
+        return ListaIniciativasAdminViewHolder(vista)
     }
 
-    override fun onBindViewHolder(holder: ListaIniciativasViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ListaIniciativasAdminViewHolder, position: Int) {
         holder.set(arrIniciativas[position])
         val vista = holder.itemView
-        val btnVerMas = vista.findViewById<Button>(R.id.btnVerMasIniciativa)
-        btnVerMas.setOnClickListener {
-            println("Click en ver más de ${arrIniciativas[position]}")
+        val btnBorrar = vista.findViewById<Button>(R.id.btnBorrarIniciativa)
+        btnBorrar.setOnClickListener {
+            println("Borrar iniciativa ${arrIniciativas[position]}")
             listener?.clickEnRenglon(position)
-            val intent = Intent(holder.itemView.context, IniciativaSeleccionada::class.java)
-            holder.itemView.context.startActivity(intent)
         }
 
     }
@@ -58,9 +56,9 @@ class AdaptadorListaIniciativas(var arrIniciativas: ArrayList<IniciativaBD>) :
         notifyDataSetChanged()
     }
 
-    class ListaIniciativasViewHolder(vista: View) : RecyclerView.ViewHolder(vista) {
-        private val tvTituloIniciativa = vista.findViewById<TextView>(R.id.tvTituloIniciativa)
-        private val ivIniciativa = vista.findViewById<ImageView>(R.id.ivIniciativa)
+    class ListaIniciativasAdminViewHolder(vista: View) : RecyclerView.ViewHolder(vista) {
+        private val tvTituloIniciativa = vista.findViewById<TextView>(R.id.tvTituloIniciativaAdmin)
+        private val ivIniciativa = vista.findViewById<ImageView>(R.id.ivIniciativaAdmin)
 
         fun set(iniciativa: IniciativaBD)
         {

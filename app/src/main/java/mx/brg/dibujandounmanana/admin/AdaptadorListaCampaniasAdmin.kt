@@ -1,4 +1,4 @@
-package mx.brg.dibujandounmanana
+package mx.brg.dibujandounmanana.admin
 
 import android.app.ProgressDialog
 import android.graphics.BitmapFactory
@@ -11,6 +11,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.storage.FirebaseStorage
+import mx.brg.dibujandounmanana.R
 import mx.brg.dibujandounmanana.model.CampaniaBD
 import java.io.File
 

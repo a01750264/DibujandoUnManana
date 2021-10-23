@@ -15,13 +15,13 @@
         android:theme="@style/Theme.DibujandoUnManana"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".VerPropuestasActivity"
+            android:name=".admin.VerPropuestasActivity"
             android:exported="true" />
         <activity
-            android:name=".IniciativaSeleccionada"
+            android:name=".ui.comosumarte.IniciativaSeleccionada"
             android:exported="true" />
         <activity
-            android:name=".CampaniaSeleccionada"
+            android:name=".ui.campanias.CampaniaSeleccionada"
             android:exported="true" />
         <activity
             android:name=".ui.comosumarte.RegistrarIniciativaActivity"
@@ -60,11 +60,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".PerfilActivity"
+            android:name=".ui.perfil.PerfilActivity"
             android:exported="true"
             android:label="@string/title_activity_perfil" />
         <activity
-            android:name=".ui.LoginActivity"
+            android:name=".ui.perfil.LoginActivity"
             android:exported="true">
 
             <!--
@@ -76,7 +76,7 @@
             -->
         </activity>
         <activity
-            android:name=".RegistarActivity"
+            android:name=".ui.perfil.RegistarActivity"
             android:exported="true"
             android:label="@string/title_activity_donar" />
         <activity

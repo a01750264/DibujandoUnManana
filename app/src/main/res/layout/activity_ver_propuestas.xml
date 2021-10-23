@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".VerPropuestasActivity">
+    tools:context=".admin.VerPropuestasActivity">
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView6"
-        android:name="mx.brg.dibujandounmanana.ListaPropuestas"
+        android:name="mx.brg.dibujandounmanana.admin.ListaPropuestas"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
