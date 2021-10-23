@@ -6,6 +6,11 @@ import mx.brg.dibujandounmanana.model.*
 import retrofit2.Call
 import retrofit2.http.*
 
+/*
+En esta interface definimos los métodos POST y GET que utilizamos para toda la información
+que necesitamos del servidor
+ */
+
 interface ServicioDibujandoApi
 {
     val context : Context

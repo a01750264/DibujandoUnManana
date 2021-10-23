@@ -11,6 +11,11 @@ import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
+/*
+Este ViewModel trae la información de las Propuestas desde la base de datos utilizando retrofit.
+Esto para mostrarlas al administrador
+ */
+
 class ListaPropuestasVM : ViewModel() {
     val arrPropuestas = MutableLiveData<List<PropuestaBD>>()
 

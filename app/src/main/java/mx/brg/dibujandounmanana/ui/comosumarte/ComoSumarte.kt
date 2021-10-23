@@ -11,6 +11,10 @@ import android.view.ViewGroup
 import mx.brg.dibujandounmanana.R
 import mx.brg.dibujandounmanana.databinding.FragmentComoSumarteBinding
 
+/*
+Fragmento que contiene la pantalla de ¿Cómo sumarte? y que observa al botón de registrar iniciativa
+ */
+
 class ComoSumarte : Fragment() {
 
     private lateinit var binding: FragmentComoSumarteBinding

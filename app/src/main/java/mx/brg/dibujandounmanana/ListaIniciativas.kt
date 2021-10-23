@@ -12,6 +12,12 @@ import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import mx.brg.dibujandounmanana.databinding.FragmentListaIniciativasBinding
 
+/*
+Este fragmento se encarga de mostrar las Iniciativas dadas de alta en la base de datos utilizando
+el adaptador para tener la información de cada una de éstas así como escuchar cuando si haga
+click sobre el botón de Ver Más
+ */
+
 class ListaIniciativas : Fragment(), RenglonListenerIniciativa {
 
     companion object {

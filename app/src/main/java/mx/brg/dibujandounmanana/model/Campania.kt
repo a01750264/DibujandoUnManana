@@ -3,6 +3,10 @@ package mx.brg.dibujandounmanana.model
 import com.google.gson.annotations.SerializedName
 import java.io.Serializable
 
+/*
+Este archivo define los atributos de las clases de las Campanias
+ */
+
 data class Campania (
     @SerializedName("nombreDonativo")
     val nombre: String,

@@ -21,6 +21,11 @@ import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
+/*
+Esta actividad permite que un donante pueda iniciar sesión en la aplicación utilizando retrofit
+para validar las credenciales de éste a través del servidor
+ */
+
 class LoginActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityLoginBinding

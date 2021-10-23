@@ -22,6 +22,11 @@ import java.text.ParseException
 import java.text.SimpleDateFormat
 import java.util.*
 
+/*
+En esta actividad el donante puede ingresar sus datos para dar de alta una cuenta
+utilizando retrofit para darlo de alta en el servidor
+ */
+
 class RegistarActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityRegistarBinding

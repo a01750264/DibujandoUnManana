@@ -17,6 +17,11 @@ import mx.brg.dibujandounmanana.ui.donacion.Donacion
 import java.io.File
 import kotlin.coroutines.coroutineContext
 
+/*
+Este adaptador se encarga de dar valor al recycler view que contiene las Campanias dadas de alta
+en la base de datos para mostrarlas al donante, también trae la imagen de éstas a través de
+Firebase Storage
+ */
 
 class AdaptadorListaCampanias (var arrCampanias: ArrayList<CampaniaBD>) :
     RecyclerView.Adapter<AdaptadorListaCampanias.ListaCampaniasViewHolder>()

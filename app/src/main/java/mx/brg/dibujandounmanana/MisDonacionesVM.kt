@@ -10,6 +10,10 @@ import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
+/*
+Este ViewModel trae todas las donaciones del donante desde la base de datos usando retrofit
+ */
+
 class MisDonacionesVM : ViewModel() {
     val arrMisDonaciones = MutableLiveData<List<MiDonacion>>()
 

@@ -8,6 +8,11 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import mx.brg.dibujandounmanana.model.MiDonacion
 
+/*
+Este adaptador se encarga de dar valor al recycler view que contiene las donaciones de un donante
+dadas de alta en la base de datos para mostrarlas al donante en la pantalla de perfil
+ */
+
 class AdaptadorMisDonaciones(var arrMisDonaciones: ArrayList<MiDonacion>) :
     RecyclerView.Adapter<AdaptadorMisDonaciones.MiDonacionViewHolder>()
 {

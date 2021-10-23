@@ -11,6 +11,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import mx.brg.dibujandounmanana.databinding.FragmentListaIniciativasAdminBinding
 import mx.brg.dibujandounmanana.databinding.FragmentListaIniciativasBinding
 
+/*
+Este fragmento se encarga de mostrar al administrador las Iniciativas dadas de alta en la base
+de datos utilizando el adaptador para tener la información de cada una de éstas
+ */
+
 class ListaIniciativasAdmin : Fragment(), RenglonListenerIniciativaAdmin {
 
     companion object {

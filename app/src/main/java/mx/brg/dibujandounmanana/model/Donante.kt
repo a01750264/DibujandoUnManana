@@ -3,6 +3,10 @@ package mx.brg.dibujandounmanana.model
 import com.google.gson.annotations.SerializedName
 import java.io.Serializable
 
+/*
+Este archivo define los atributos para las diferentes clases que tiene el donante
+ */
+
 data class DonanteToken (
     @SerializedName("token")
     val token: String

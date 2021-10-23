@@ -15,6 +15,12 @@ import com.google.firebase.storage.FirebaseStorage
 import mx.brg.dibujandounmanana.model.IniciativaBD
 import java.io.File
 
+/*
+Este adaptador se encarga de dar valor al recycler view que contiene las Iniciativas dadas de alta
+en la base de datos para mostrarlas al donante, también trae la imagen de éstas a través de
+Firebase Storage
+ */
+
 class AdaptadorListaIniciativas(var arrIniciativas: ArrayList<IniciativaBD>) :
     RecyclerView.Adapter<AdaptadorListaIniciativas.ListaIniciativasViewHolder>()
 {

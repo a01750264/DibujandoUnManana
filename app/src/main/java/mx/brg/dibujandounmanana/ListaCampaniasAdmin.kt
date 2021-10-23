@@ -10,6 +10,11 @@ import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import mx.brg.dibujandounmanana.databinding.FragmentListaCampaniasAdminBinding
 
+/*
+Este fragmento se encarga de mostrar al administrador las Campanias dadas de alta en la base
+de datos utilizando el adaptador para tener la información de cada una de éstas
+ */
+
 class ListaCampaniasAdmin : Fragment(), RenglonListenerCampaniasAdmin {
 
     companion object {

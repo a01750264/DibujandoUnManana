@@ -19,6 +19,11 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.io.File
 
+/*
+Esta actividad muestra la información completa de la Campania a la que se hizo click en Ver Más,
+y también está al pendiente de cuando se haga click en el botón de Participar
+ */
+
 class IniciativaSeleccionada : AppCompatActivity() {
 
     private lateinit var binding: ActivityIniciativaSeleccionadaBinding

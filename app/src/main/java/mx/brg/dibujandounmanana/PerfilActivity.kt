@@ -12,6 +12,12 @@ import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
+/*
+Esta actividad muestra toda la información del usuario que inició sesión, se usa retrofit para
+traer los datos del usuario y mostrarlos junto con sus donaciones utilizando un
+FragmentContainerView
+ */
+
 class PerfilActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityPerfilBinding

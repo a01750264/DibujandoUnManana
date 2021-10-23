@@ -14,6 +14,10 @@ import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
+/*
+Actividad que permite a un donante registrar una propuesta de iniciativa por medio de retrofit
+ */
+
 class RegistrarIniciativaActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityRegistrarIniciativaBinding

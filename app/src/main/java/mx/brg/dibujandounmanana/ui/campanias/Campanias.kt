@@ -10,6 +10,10 @@ import android.view.View
 import android.view.ViewGroup
 import mx.brg.dibujandounmanana.R
 
+/*
+Fragmento que carga la pantalla de las campanias
+ */
+
 class Campanias : Fragment() {
 
     companion object {

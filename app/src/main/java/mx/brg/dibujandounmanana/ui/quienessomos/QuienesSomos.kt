@@ -8,6 +8,10 @@ import android.view.View
 import android.view.ViewGroup
 import mx.brg.dibujandounmanana.R
 
+/*
+Fragmento que muestra la pantalla de ¿Quiénes somos?
+ */
+
 class QuienesSomos : Fragment() {
 
     companion object {

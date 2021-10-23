@@ -3,6 +3,10 @@ package mx.brg.dibujandounmanana.model
 import com.google.gson.annotations.SerializedName
 import java.io.Serializable
 
+/*
+Este archivo define los atributos de todas las clases de las iniciativas
+ */
+
 data class Iniciativa (
     @SerializedName("nombreIniciativa")
     val nombre: String,

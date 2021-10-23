@@ -14,6 +14,12 @@ import com.google.firebase.storage.FirebaseStorage
 import mx.brg.dibujandounmanana.model.CampaniaBD
 import java.io.File
 
+/*
+Este adaptador se encarga de dar valor al recycler view que contiene las Campanias dadas de alta
+en la base de datos para mostrarlas al administrador, también trae la imagen de éstas a través de
+Firebase Storage
+ */
+
 class AdaptadorListaCampaniasAdmin(var arrCampanias: ArrayList<CampaniaBD>) :
     RecyclerView.Adapter<AdaptadorListaCampaniasAdmin.ListaCampaniasAdminViewHolder>() {
     var listener: RenglonListenerCampaniasAdmin? = null

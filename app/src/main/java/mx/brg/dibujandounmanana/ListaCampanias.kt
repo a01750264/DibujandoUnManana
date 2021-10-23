@@ -12,6 +12,12 @@ import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import mx.brg.dibujandounmanana.databinding.FragmentListaCampaniasBinding
 
+/*
+Este fragmento se encarga de mostrar las Campanias dadas de alta en la base de datos utilizando
+el adaptador para tener la información de cada una de éstas así como escuchar cuando si haga
+click sobre el botón de Donar o Ver Más
+ */
+
 class ListaCampanias : Fragment(), RenglonListenerCampanias {
 
     companion object {

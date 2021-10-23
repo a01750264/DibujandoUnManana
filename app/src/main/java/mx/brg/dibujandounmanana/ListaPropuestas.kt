@@ -11,6 +11,11 @@ import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import mx.brg.dibujandounmanana.databinding.FragmentListaPropuestasBinding
 
+/*
+Este fragmento se encarga de mostrar las Propuestas dadas de alta en la base de datos utilizando
+el adaptador para tener la información de cada una de éstas
+ */
+
 class ListaPropuestas : Fragment() {
 
     companion object {

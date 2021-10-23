@@ -17,6 +17,11 @@ import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
+/*
+Esta actividad permite que el administrador inicie sesión en la aplicación, se verifica
+que los datos sean correctos a través del servidor utilizando retrofit
+ */
+
 class LoginAdminActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityLoginAdminBinding

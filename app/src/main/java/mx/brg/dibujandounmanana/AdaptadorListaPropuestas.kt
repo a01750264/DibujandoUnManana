@@ -11,6 +11,11 @@ import androidx.recyclerview.widget.RecyclerView
 import mx.brg.dibujandounmanana.model.IniciativaBD
 import mx.brg.dibujandounmanana.model.PropuestaBD
 
+/*
+Este adaptador se encarga de dar valor al recycler view que contiene las Propuestas dadas de alta
+en la base de datos para mostrarlas al administrador
+ */
+
 class AdaptadorListaPropuestas(var arrPropuestas: ArrayList<PropuestaBD>) :
     RecyclerView.Adapter<AdaptadorListaPropuestas.ListaPropuestasViewHolder>()
 {

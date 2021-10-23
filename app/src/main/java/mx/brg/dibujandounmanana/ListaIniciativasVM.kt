@@ -10,6 +10,11 @@ import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
+/*
+Este ViewModel trae la información de las Iniciativas desde la base de datos utilizando retrofit.
+Esto para mostrarlas al administrador
+ */
+
 class ListaIniciativasVM : ViewModel() {
     val arrIniciativas = MutableLiveData<List<IniciativaBD>>()
 

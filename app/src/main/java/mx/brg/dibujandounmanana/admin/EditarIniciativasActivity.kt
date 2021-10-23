@@ -7,6 +7,10 @@ import mx.brg.dibujandounmanana.R
 import mx.brg.dibujandounmanana.databinding.ActivityEditarIniciativasBinding
 import mx.brg.dibujandounmanana.databinding.ActivityMainAdminBinding
 
+/*
+Esta actividad permite al administrador crear nuevas Iniciativas y ver las existentes
+ */
+
 class EditarIniciativasActivity : AppCompatActivity() {
     private lateinit var binding: ActivityEditarIniciativasBinding
 

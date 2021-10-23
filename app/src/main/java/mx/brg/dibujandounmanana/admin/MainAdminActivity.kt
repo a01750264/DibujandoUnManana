@@ -9,6 +9,11 @@ import mx.brg.dibujandounmanana.databinding.ActivityEditarCampaniasBinding
 import mx.brg.dibujandounmanana.databinding.ActivityEditarIniciativasBinding
 import mx.brg.dibujandounmanana.databinding.ActivityMainAdminBinding
 
+/*
+Esta actividad es la pantalla prinicpal del administrador, aquí se ponen los listeners de cada
+botón para que hagan su acción correspondiente
+ */
+
 class MainAdminActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainAdminBinding

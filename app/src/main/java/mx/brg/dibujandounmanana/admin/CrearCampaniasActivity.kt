@@ -21,6 +21,11 @@ import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
+/*
+Esta Actividad permite al administrador crear Campanias utilizando retrofit para guardarlas en el servidor
+y Firebase para almecenar las imágenes
+ */
+
 class CrearCampaniasActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityCrearCampaniasBinding

@@ -33,6 +33,11 @@ import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
+/*
+En esta actividad configuramos el botón de PayPal y creamos una instancia de Donacion en la
+base de datos utilizando retrofit
+ */
+
 class Donacion : AppCompatActivity() {
 
     private val retrofit by lazy {

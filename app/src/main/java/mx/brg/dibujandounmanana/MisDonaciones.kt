@@ -12,6 +12,11 @@ import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import mx.brg.dibujandounmanana.databinding.FragmentMisDonacionesBinding
 
+/*
+Este fragmento se encarga de mostrar la lista de donaciones que ha realizado un donante,
+esto lo hace utilizando el token de la sesión del usuario en las preferencias
+ */
+
 class MisDonaciones : Fragment() {
 
     companion object {

@@ -7,6 +7,10 @@ import mx.brg.dibujandounmanana.R
 import mx.brg.dibujandounmanana.databinding.ActivityEditarCampaniasBinding
 import mx.brg.dibujandounmanana.databinding.ActivityEditarIniciativasBinding
 
+/*
+Esta actividad permite al administrador crear nuevas Campanias y ver las existentes
+ */
+
 class EditarCampaniasActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityEditarCampaniasBinding

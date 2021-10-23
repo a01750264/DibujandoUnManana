@@ -22,6 +22,11 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.jar.Manifest
 
+/*
+Esta Actividad permite al administrador crear Iniciativas utilizando retrofit para guardarlas en el servidor
+y Firebase para almecenar las imágenes
+ */
+
 class CrearIniciativasActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityCrearIniciativasBinding
